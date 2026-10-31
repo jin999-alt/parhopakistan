@@ -3,99 +3,140 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ParhoPakistan is a student-friendly directory for Class 9–12 past papers, notes, MCQs, pairing schemes and exam practice resources across Pakistan.">
-<meta name="keywords" content="Pakistan past papers, FBISE, BISE, class 9, class 10, class 11, class 12, ICS, FSc, FA, ICom, notes, MCQs, pairing schemes">
-<meta name="theme-color" content="#123b70">
-<title>ParhoPakistan — Study Resources for Classes 9–12</title>
+<meta name="description" content="ParhoPakistan — a free student resource directory for Pakistani board students.">
+<meta name="theme-color" content="#102a43">
+<title>ParhoPakistan | Study Resources for Every Student</title>
 <style>
-:root{--navy:#102f59;--blue:#1769aa;--green:#11845b;--ink:#172334;--muted:#607086;--line:#dce5ef;--bg:#f4f7fb;--card:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
-a{color:inherit}.top{background:#0b274a;color:#e8f2ff;text-align:center;padding:8px 14px;font-size:13px}
-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{max-width:1160px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}
-.brand{font-weight:800;color:var(--navy);font-size:24px;text-decoration:none;letter-spacing:-.6px}.brand span{color:var(--green)}nav{display:flex;gap:17px;align-items:center;flex-wrap:wrap}nav a{text-decoration:none;color:#34445a;font-weight:700;font-size:14px}
-.lang{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 10px;font-weight:700;cursor:pointer;color:var(--navy)}
-.hero{background:linear-gradient(120deg,#102f59,#1769aa);color:#fff;padding:54px 20px}.hero-inner{max-width:1120px;margin:auto}.eyebrow{font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:#b9ddff;font-weight:bold}
-h1{font-size:clamp(32px,5vw,52px);line-height:1.12;max-width:780px;margin:12px 0}.hero p{max-width:700px;color:#e1efff;font-size:17px}
-.searchbar{display:flex;max-width:760px;margin-top:22px;background:#fff;padding:6px;border-radius:12px;gap:6px}.searchbar input{border:0;outline:0;flex:1;min-width:0;padding:12px;font-size:15px;border-radius:8px}.searchbar button,.btn{border:0;background:var(--green);color:#fff;padding:12px 17px;border-radius:8px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
-.wrap{max-width:1160px;margin:auto;padding:32px 20px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:17px}
-h2{font-size:26px;margin:0;color:#152b46}.sub{color:var(--muted);margin:5px 0 0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.class-card,.panel,.resource,.board-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 3px 12px #142b460d}
-.class-card{cursor:pointer;transition:.15s}.class-card:hover{transform:translateY(-3px);border-color:#9fc6eb}.class-num{font-size:12px;color:var(--blue);font-weight:800;text-transform:uppercase}.class-card h3{margin:7px 0 4px;font-size:21px}.class-card p{margin:0;color:var(--muted);font-size:13px}
-.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:17px 0}
-select,.filter-input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink);font-size:14px}
-.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.resource h3{margin:8px 0 5px;font-size:18px}.resource p{color:var(--muted);font-size:14px;margin:0 0 13px}
-.tag{display:inline-block;background:#eaf4ff;color:#15558e;border-radius:30px;padding:4px 9px;font-size:11px;font-weight:800}
-.status{font-size:12px;color:#8b5a12;background:#fff4df;padding:5px 8px;border-radius:20px;display:inline-block}
-.resource .btn{font-size:13px;padding:9px 12px;background:#e8f1fa;color:var(--navy)}.resource .btn[aria-disabled=true]{opacity:.6;cursor:not-allowed}
-.boards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.board-card{padding:14px}.board-card strong{display:block}.board-card a{font-size:13px;color:#1769aa;text-decoration:none;font-weight:700}
-.notice{background:#eaf4ff;border:1px solid #cfe4fa;border-radius:14px;padding:18px;margin-top:20px}.notice p{margin:6px 0 0;color:#36516e;font-size:14px}
-footer{background:#0b274a;color:#d9e8f8;margin-top:26px;padding:28px 20px}.footer-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{font-size:12px;color:#b8cce2}
-.empty{grid-column:1/-1;background:#fff;padding:22px;border-radius:12px;color:var(--muted);border:1px dashed #b8c9dc}
-@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.resource-grid,.boards-grid{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.nav{align-items:flex-start;flex-direction:column}.grid,.resource-grid,.boards-grid,.filters{grid-template-columns:1fr}nav{gap:10px}.hero{padding:40px 18px}.searchbar{flex-direction:column}.searchbar button{width:100%}.section-head{align-items:flex-start;flex-direction:column}}
+:root{--navy:#102a43;--blue:#1769aa;--sky:#eaf4fb;--ink:#182b3a;--muted:#607487;--line:#dce6ee;--white:#fff;--green:#13795b}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f8fb;color:var(--ink);line-height:1.55}
+header{background:linear-gradient(120deg,#102a43,#1769aa);color:white;padding:18px max(20px,calc((100% - 1160px)/2));}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:25px;font-weight:800;letter-spacing:.2px}.brand span{color:#8ed6ff}
+nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:600;font-size:14px}
+.lang{border:1px solid #ffffff88;background:#ffffff18;color:white;border-radius:10px;padding:9px 13px;cursor:pointer;font-weight:700}
+.hero{max-width:1160px;margin:36px auto 22px;padding:0 20px 30px}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:0 0 12px;max-width:760px}.hero p{max-width:720px;color:#e2f1fc;font-size:17px;margin:0 0 22px}
+.searchrow{display:grid;grid-template-columns:1fr auto;gap:10px;max-width:760px}.searchrow input{width:100%;padding:15px 16px;border:0;border-radius:12px;font-size:16px}.searchrow button,.primary{background:#ffca55;color:#263746;border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px 55px}.intro{display:flex;justify-content:space-between;align-items:end;gap:14px;flex-wrap:wrap;margin:28px 0 16px}.intro h2{margin:0;font-size:25px}.intro p{margin:3px 0;color:var(--muted)}
+.filters{background:white;border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;box-shadow:0 5px 18px #18364b0a}
+label{display:block;font-size:12px;font-weight:800;color:var(--muted);margin:0 0 5px}select,input{font:inherit}select{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:18px}
+.card{background:white;border:1px solid var(--line);border-radius:15px;padding:17px;display:flex;flex-direction:column;gap:9px;min-height:190px;box-shadow:0 5px 18px #18364b08}
+.tag{font-size:11px;font-weight:800;color:var(--blue);background:var(--sky);padding:5px 9px;border-radius:30px;align-self:flex-start}.card h3{margin:0;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}.card a{margin-top:auto;color:var(--blue);font-weight:800;text-decoration:none}.card a:hover{text-decoration:underline}
+.notice{margin-top:22px;padding:17px;border-radius:14px;background:#fff8e8;border:1px solid #f1dfb7;color:#614b1c}.notice a{color:#125d91;font-weight:700}
+.boardgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.board{background:white;border:1px solid var(--line);padding:13px;border-radius:12px;font-size:14px}.board b{display:block}
+footer{background:#102a43;color:#dbe8f2;padding:28px 20px;text-align:center}footer a{color:#9edcff}
+.empty{grid-column:1/-1;background:white;border:1px dashed #b9c9d6;padding:25px;border-radius:14px;text-align:center;color:var(--muted)}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:800px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.boardgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.searchrow{grid-template-columns:1fr}.filters,.grid{grid-template-columns:1fr}.hero{margin-top:25px}.brand{font-size:22px}}
 </style>
 </head>
 <body>
-<div class="top" data-en="Free study resources for Pakistani students — Classes 9 to 12" data-ur="پاکستانی طلبہ کے لیے مفت تعلیمی مواد — جماعت نہم تا بارہویں">Free study resources for Pakistani students — Classes 9 to 12</div>
-<header><div class="nav">
-<a class="brand" href="#">Parho<span>Pakistan</span></a>
-<nav><a href="#classes" data-en="Classes" data-ur="جماعتیں">Classes</a><a href="#library" data-en="Study Material" data-ur="تعلیمی مواد">Study Material</a><a href="#boards" data-en="Boards" data-ur="بورڈز">Boards</a><a href="#about" data-en="About" data-ur="ہمارے بارے میں">About</a></nav>
-<button class="lang" id="langToggle" type="button">اردو</button>
-</div></header>
-<section class="hero"><div class="hero-inner">
-<div class="eyebrow" data-en="Learn smarter • Prepare better" data-ur="بہتر سیکھیں • بہتر تیاری کریں">Learn smarter • Prepare better</div>
-<h1 data-en="Your Exam Preparation Starts Here." data-ur="آپ کی امتحانی تیاری یہاں سے شروع ہوتی ہے۔">Your Exam Preparation Starts Here.</h1>
-<p data-en="Find class-wise past papers, pairing schemes, guess papers, notes, MCQs and practice material for Pakistani students — all in one place." data-ur="پاکستانی طلبہ کے لیے جماعت کے مطابق گزشتہ پرچے، پیئرنگ اسکیمز، گیس پیپرز، نوٹس، ایم سی کیوز اور پریکٹس مواد ایک ہی جگہ تلاش کریں۔">Find class-wise past papers, pairing schemes, guess papers, notes, MCQs and practice material for Pakistani students — all in one place.</p>
-<div class="searchbar"><input id="search" type="search" placeholder="Search: Class 11 ICS Computer Science"><button id="searchBtn" data-en="Search resources" data-ur="مواد تلاش کریں">Search resources</button></div>
-</div></section>
-<main>
-<section class="wrap" id="classes">
-<div class="section-head"><div><h2 data-en="Choose Your Class" data-ur="اپنی جماعت منتخب کریں">Choose Your Class</h2><p class="sub" data-en="Select a class to filter the study library." data-ur="تعلیمی مواد دیکھنے کے لیے اپنی جماعت منتخب کریں۔">Select a class to filter the study library.</p></div></div>
-<div class="grid">
-<div class="class-card" data-class="9"><div class="class-num">Matric</div><h3>Class 9 / جماعت نہم</h3><p data-en="Papers, schemes, notes and practice" data-ur="پرچے، اسکیمز، نوٹس اور پریکٹس">Papers, schemes, notes and practice</p></div>
-<div class="class-card" data-class="10"><div class="class-num">Matric</div><h3>Class 10 / جماعت دہم</h3><p data-en="Papers, schemes, notes and practice" data-ur="پرچے، اسکیمز، نوٹس اور پریکٹس">Papers, schemes, notes and practice</p></div>
-<div class="class-card" data-class="11"><div class="class-num">Intermediate</div><h3>Class 11 / فرسٹ ایئر</h3><p>FA, FSc, ICS, ICom</p></div>
-<div class="class-card" data-class="12"><div class="class-num">Intermediate</div><h3>Class 12 / سیکنڈ ایئر</h3><p>FA, FSc, ICS, ICom</p></div>
-</div>
-</section>
-<section class="wrap" id="library">
-<div class="section-head"><div><h2 data-en="Study Material Library" data-ur="تعلیمی مواد کی لائبریری">Study Material Library</h2><p class="sub" data-en="Choose your class, board, subject and material type." data-ur="جماعت، بورڈ، مضمون اور مواد کی قسم منتخب کریں۔">Choose your class, board, subject and material type.</p></div></div>
-<div class="filters">
-<select id="classFilter" aria-label="Class"><option value="">All classes / تمام جماعتیں</option><option value="9">Class 9</option><option value="10">Class 10</option><option value="11">Class 11</option><option value="12">Class 12</option></select>
-<select id="boardFilter" aria-label="Board"><option value="">All Pakistan boards / تمام بورڈز</option></select>
-<select id="subjectFilter" aria-label="Subject"><option value="">All subjects / تمام مضامین</option></select>
-<select id="typeFilter" aria-label="Material type"><option value="">All material / تمام مواد</option><option>Past Paper</option><option>Pairing Scheme</option><option>Guess Paper</option><option>Notes</option><option>MCQs</option><option>Practice Test</option></select>
-</div>
-<div class="resource-grid" id="resourceGrid"></div>
-<div class="notice"><strong data-en="Important: content availability" data-ur="اہم: مواد کی دستیابی">Important: content availability</strong><p data-en="This version provides the working website structure and filters. A resource becomes downloadable only after its real PDF or document is uploaded and linked. We do not invent past papers, schemes or answer keys. Always verify current exam information with your own board." data-ur="اس ورژن میں ویب سائٹ کا ڈھانچہ اور فلٹرز کام کرتے ہیں۔ کوئی مواد اسی وقت ڈاؤن لوڈ ہوگا جب اس کی اصل PDF یا دستاویز اپ لوڈ کرکے لنک کیا جائے۔ ہم فرضی پرچے یا اسکیمز شامل نہیں کرتے۔ امتحانی معلومات اپنے متعلقہ بورڈ سے ضرور تصدیق کریں۔">This version provides the working website structure and filters. A resource becomes downloadable only after its real PDF or document is uploaded and linked. We do not invent past papers, schemes or answer keys. Always verify current exam information with your own board.</p></div>
-</section>
-<section class="wrap" id="boards"><div class="section-head"><div><h2 data-en="Education Boards in Pakistan" data-ur="پاکستان کے تعلیمی بورڈز">Education Boards in Pakistan</h2><p class="sub" data-en="Select your board from the filter above. Official websites are linked where available." data-ur="اوپر فلٹر میں اپنا بورڈ منتخب کریں۔ جہاں دستیاب ہو وہاں سرکاری ویب سائٹ کا لنک دیا گیا ہے۔">Select your board from the filter above. Official websites are linked where available.</p></div></div><div class="boards-grid" id="boardDirectory"></div></section>
-<section class="wrap" id="about"><div class="panel"><h2 data-en="About ParhoPakistan" data-ur="ParhoPakistan کے بارے میں">About ParhoPakistan</h2><p class="sub" data-en="An independent student resource project. ParhoPakistan is not affiliated with any examination board or government department. Board names and logos belong to their respective owners. Contact details and verified resource links should be added before applying for advertising." data-ur="یہ طلبہ کے لیے ایک آزاد تعلیمی منصوبہ ہے۔ ParhoPakistan کسی امتحانی بورڈ یا سرکاری محکمے سے وابستہ نہیں۔ اشتہارات کے لیے درخواست دینے سے پہلے رابطے کی معلومات اور تصدیق شدہ مواد کے لنکس شامل کریں۔">An independent student resource project. ParhoPakistan is not affiliated with any examination board or government department. Board names and logos belong to their respective owners. Contact details and verified resource links should be added before applying for advertising.</p></div></section>
+<header>
+ <div class="top">
+  <div class="brand">Parho<span>Pakistan</span></div>
+  <nav><a href="#resources" data-en="Resources" data-ur="تعلیمی مواد">Resources</a><a href="#boards" data-en="Boards" data-ur="بورڈز">Boards</a><a href="#about" data-en="About" data-ur="تعارف">About</a></nav>
+  <button class="lang" id="langBtn" type="button">اردو</button>
+ </div>
+ <section class="hero">
+  <h1 data-en="Study smarter. Prepare with confidence." data-ur="سمجھداری سے پڑھیں، اعتماد سے تیاری کریں۔">Study smarter. Prepare with confidence.</h1>
+  <p data-en="A growing study-resource directory for students of Pakistani boards — from Class 9 to Class 12, across major study groups." data-ur="پاکستانی بورڈز کے طلبہ کے لیے جماعت نہم سے بارہویں تک تعلیمی مواد کی ڈائریکٹری۔">A growing study-resource directory for students of Pakistani boards — from Class 9 to Class 12, across major study groups.</p>
+  <div class="searchrow"><input id="search" type="search" placeholder="Search class, subject or material..." aria-label="Search"><button id="searchBtn" type="button">Search</button></div>
+ </section>
+</header>
+<main class="wrap">
+ <section id="resources">
+  <div class="intro"><div><h2 data-en="Find your study material" data-ur="اپنا تعلیمی مواد تلاش کریں">Find your study material</h2><p data-en="Choose your class, board, group and subject." data-ur="اپنی جماعت، بورڈ، گروپ اور مضمون منتخب کریں۔">Choose your class, board, group and subject.</p></div></div>
+  <div class="filters">
+   <div><label for="classFilter">CLASS / جماعت</label><select id="classFilter"><option value="all">All classes / تمام جماعتیں</option><option>9</option><option>10</option><option>11</option><option>12</option></select></div>
+   <div><label for="groupFilter">STUDY GROUP / گروپ</label><select id="groupFilter"><option value="all">All groups</option><option>ICS</option><option>FSc Pre-Medical</option><option>FSc Pre-Engineering</option><option>FA</option><option>I.Com</option><option>General</option></select></div>
+   <div><label for="subjectFilter">SUBJECT / مضمون</label><select id="subjectFilter"><option value="all">All subjects</option></select></div>
+   <div><label for="typeFilter">MATERIAL TYPE / مواد</label><select id="typeFilter"><option value="all">All material</option><option>Past Papers</option><option>Pairing Schemes</option><option>Notes</option><option>MCQs</option><option>Guess Papers</option><option>Practice Tests</option><option>Textbooks</option></select></div>
+  </div>
+  <div class="grid" id="resourceGrid" aria-live="polite"></div>
+  <p class="small" id="resultCount"></p>
+  <div class="notice"><b>Important:</b> This website directory is being populated. Some material links are not available yet; no fake download buttons are shown. Always verify the syllabus and paper scheme for your own board and exam year.</div>
+ </section>
+ <section id="boards">
+  <div class="intro"><div><h2>Pakistan Boards</h2><p>Major examination boards and education authorities.</p></div></div>
+  <div class="boardgrid">
+   <div class="board"><b>Punjab</b>BISE Lahore, Faisalabad, Gujranwala, Multan, Rawalpindi, Sargodha, Bahawalpur, DG Khan, Sahiwal</div>
+   <div class="board"><b>Federal</b>FBISE</div>
+   <div class="board"><b>Sindh</b>Karachi, Hyderabad, Sukkur, Larkana, Mirpurkhas, Shaheed Benazirabad</div>
+   <div class="board"><b>Khyber Pakhtunkhwa</b>Peshawar, Mardan, Swat, Abbottabad, Kohat, Bannu, Malakand, D.I. Khan</div>
+   <div class="board"><b>Balochistan</b>BBISE Quetta</div>
+   <div class="board"><b>Azad Jammu & Kashmir</b>AJK BISE Mirpur</div>
+   <div class="board"><b>Gilgit-Baltistan</b>Regional education resources</div>
+   <div class="board"><b>Technical / other</b>Relevant technical and vocational boards</div>
+  </div>
+ </section>
+ <section id="about">
+  <div class="intro"><div><h2>About ParhoPakistan</h2><p>Independent student resource directory. Not affiliated with any examination board or government department.</p></div></div>
+  <p class="small">We aim to help students find reliable study resources. Before sharing any PDF, we check its board, class, subject and exam session. Copyrighted books and paid notes are not hosted without permission.</p>
+ </section>
 </main>
-<footer><div class="footer-inner"><div><strong>ParhoPakistan</strong><p class="small" data-en="Study smart. Prepare with confidence." data-ur="سمجھداری سے پڑھیں، اعتماد سے تیاری کریں۔">Study smart. Prepare with confidence.</p></div><div class="small">Contact: add-your-email@example.com<br>© <span id="year"></span> ParhoPakistan</div></div></footer>
+<footer>© <span id="year"></span> ParhoPakistan · Made for students of Pakistan</footer>
 <script>
-const boards = [
-["FBISE Islamabad","https://www.fbise.edu.pk/"],["BISE Lahore","https://www.biselahore.com/"],["BISE Faisalabad","https://www.bisefsd.edu.pk/"],["BISE Gujranwala","https://www.bisegrw.edu.pk/"],["BISE Rawalpindi","https://www.biserawalpindi.edu.pk/"],["BISE Multan","https://web.bisemultan.edu.pk/"],["BISE Sargodha","https://www.bisesargodha.edu.pk/"],["BISE Bahawalpur","https://www.bisebwp.edu.pk/"],["BISE D.G. Khan","https://www.bisedgkhan.edu.pk/"],["BISE Sahiwal","https://bisesahiwal.edu.pk/"],
-["BSEK Karachi (Matric)","https://www.bsek.edu.pk/"],["BIEK Karachi (Intermediate)","https://www.biek.edu.pk/"],["BISE Hyderabad","https://www.biseh.edu.pk/"],["BISE Sukkur","https://www.bisesuks.edu.pk/"],["BISE Larkana","https://www.biselrk.edu.pk/"],["BISE Mirpurkhas","https://bisempk.edu.pk/"],
-["BISE Peshawar","https://www.bisep.edu.pk/"],["BISE Abbottabad","https://www.biseatd.edu.pk/"],["BISE Bannu","https://www.biseb.edu.pk/"],["BISE Mardan","https://web.bisemdn.edu.pk/"],["BISE Swat","https://www.bisess.edu.pk/"],["BISE Malakand","https://www.bisemalakand.edu.pk/"],["BISE Kohat","https://www.bisekt.edu.pk/"],["BISE D.I. Khan","https://www.bisedik.edu.pk/"],
-["BBISE Quetta","https://bbiseqta.edu.pk/"],["AJK BISE Mirpur","https://ajkbise.net/"]
+"use strict";
+const subjects = [
+"English","Urdu","Islamiyat","Tarjuma-tul-Quran","Pakistan Studies","Mathematics","Physics","Chemistry","Biology","Computer Science","Statistics","Economics","Principles of Accounting","Principles of Commerce","Business Mathematics","Education","Civics","Psychology","Sociology","Geography","History","Islamic History","Arabic","Persian","Punjabi","Fine Arts","Home Economics","Physical Education","Library Science"
 ];
-const subjects = ["English","Urdu","Islamiyat","Pakistan Studies","Mathematics","Physics","Chemistry","Biology","Computer Science","General Science","Economics","Statistics","Principles of Accounting","Principles of Commerce","Education","Civics"];
-const materialTypes = ["Past Paper","Pairing Scheme","Guess Paper","Notes","MCQs","Practice Test"];
-const data=[];
-for(let c=9;c<=12;c++){for(const s of subjects){for(const t of materialTypes){data.push({cls:String(c),board:"All Boards",subject:s,type:t,title:`Class ${c} ${s} — ${t}`,desc:"No verified file has been added yet. Add a real PDF or original resource before publishing."});}}}
-const boardSelect=document.getElementById("boardFilter"),subjectSelect=document.getElementById("subjectFilter");
-boards.forEach(([name])=>{const o=document.createElement("option");o.value=name;o.textContent=name;boardSelect.appendChild(o)});
-subjects.forEach(name=>{const o=document.createElement("option");o.value=name;o.textContent=name;subjectSelect.appendChild(o)});
-const directory=document.getElementById("boardDirectory");
-boards.forEach(([name,url])=>{const el=document.createElement("article");el.className="board-card";const strong=document.createElement("strong");strong.textContent=name;const a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noopener";a.textContent="Official board website ↗";el.append(strong,a);directory.appendChild(el)});
-function render(){const c=document.getElementById("classFilter").value,b=boardSelect.value,s=subjectSelect.value,t=document.getElementById("typeFilter").value,q=document.getElementById("search").value.toLowerCase().trim();const found=data.filter(r=>(!c||r.cls===c)&&(!s||r.subject===s)&&(!t||r.type===t)&&(!q||(r.title+" "+r.subject+" "+r.type+" "+r.cls).toLowerCase().includes(q)));const grid=document.getElementById("resourceGrid");grid.innerHTML="";const list=found.slice(0,36);if(!list.length){grid.innerHTML='<div class="empty">No matching category found. Try changing the filters.</div>';return;}list.forEach(r=>{const card=document.createElement("article");card.className="resource";const tag=document.createElement("span");tag.className="tag";tag.textContent=`Class ${r.cls} · ${r.type}`;const h=document.createElement("h3");h.textContent=r.title;const p=document.createElement("p");p.textContent=r.desc;const status=document.createElement("span");status.className="status";status.textContent="File not added yet";card.append(tag,h,p,status);grid.appendChild(card)});}
-function setClass(c){document.getElementById("classFilter").value=c;render();document.getElementById("library").scrollIntoView({behavior:"smooth"});}
-document.querySelectorAll(".class-card").forEach(el=>el.addEventListener("click",()=>setClass(el.dataset.class)));
-["classFilter","boardFilter","subjectFilter","typeFilter"].forEach(id=>document.getElementById(id).addEventListener("change",render));
-document.getElementById("searchBtn").addEventListener("click",render);document.getElementById("search").addEventListener("keydown",e=>{if(e.key==="Enter")render()});
+const types = ["Past Papers","Pairing Schemes","Notes","MCQs","Guess Papers","Practice Tests","Textbooks"];
+const groups = ["ICS","FSc Pre-Medical","FSc Pre-Engineering","FA","I.Com","General"];
+const classFilter=document.getElementById("classFilter");
+const groupFilter=document.getElementById("groupFilter");
+const subjectFilter=document.getElementById("subjectFilter");
+const typeFilter=document.getElementById("typeFilter");
+const search=document.getElementById("search");
+const grid=document.getElementById("resourceGrid");
+const count=document.getElementById("resultCount");
+const allResources=[];
+for(let cls=9;cls<=12;cls++){
+  for(const subject of subjects){
+    for(const type of types){
+      allResources.push({cls:String(cls),subject,type,group:"All groups"});
+    }
+  }
+}
+for(const s of subjects){const o=document.createElement("option");o.value=s;o.textContent=s;subjectFilter.appendChild(o);}
+function render(){
+ const q=search.value.trim().toLowerCase();
+ const filtered=allResources.filter(r=>
+  (classFilter.value==="all"||r.cls===classFilter.value)&&
+  (subjectFilter.value==="all"||r.subject===subjectFilter.value)&&
+  (typeFilter.value==="all"||r.type===typeFilter.value)&&
+  (groupFilter.value==="all"||groupFilter.value==="General"||
+    (groupFilter.value==="ICS"&&["Computer Science","Mathematics","Physics","Statistics","Economics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
+    (groupFilter.value==="FSc Pre-Medical"&&["Biology","Chemistry","Physics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
+    (groupFilter.value==="FSc Pre-Engineering"&&["Mathematics","Chemistry","Physics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
+    (groupFilter.value==="I.Com"&&["Principles of Accounting","Principles of Commerce","Business Mathematics","Economics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
+    (groupFilter.value==="FA"&&!["Computer Science","Biology","Chemistry","Physics","Principles of Accounting","Principles of Commerce"].includes(r.subject))
+  )&&(!q||`${r.cls} ${r.subject} ${r.type} ${r.group}`.toLowerCase().includes(q))
+ );
+ const shown=filtered.slice(0,72);
+ grid.replaceChildren();
+ if(!shown.length){grid.innerHTML='<div class="empty">No matching subjects found. Try changing your filters.</div>';}
+ for(const r of shown){
+  const card=document.createElement("article");card.className="card";
+  const tag=document.createElement("span");tag.className="tag";tag.textContent=`CLASS ${r.cls}`;
+  const h=document.createElement("h3");h.textContent=`${r.subject} — ${r.type}`;
+  const p=document.createElement("p");p.textContent="Resource listing planned. Verified file will be added when available.";
+  const a=document.createElement("a");a.href="https://pectaa.edu.pk/books-and-publications/";a.target="_blank";a.rel="noopener";a.textContent="Check official Punjab resources ↗";
+  card.append(tag,h,p,a);grid.append(card);
+ }
+ count.textContent=`Showing ${shown.length} of ${filtered.length} matching listings.`;
+}
+[classFilter,groupFilter,subjectFilter,typeFilter].forEach(el=>el.addEventListener("change",render));
+document.getElementById("searchBtn").addEventListener("click",render);
+search.addEventListener("input",render);
 document.getElementById("year").textContent=new Date().getFullYear();
-let urdu=false;document.getElementById("langToggle").addEventListener("click",()=>{urdu=!urdu;document.documentElement.lang=urdu?"ur":"en";document.querySelectorAll("[data-en][data-ur]").forEach(el=>el.textContent=urdu?el.dataset.ur:el.dataset.en);document.getElementById("langToggle").textContent=urdu?"English":"اردو";});
+let urdu=false;
+document.getElementById("langBtn").addEventListener("click",()=>{
+ urdu=!urdu;document.documentElement.lang=urdu?"ur":"en";document.documentElement.dir=urdu?"rtl":"ltr";
+ document.querySelectorAll("[data-en]").forEach(el=>el.textContent=urdu?el.dataset.ur:el.dataset.en);
+ document.getElementById("langBtn").textContent=urdu?"English":"اردو";
+ search.placeholder=urdu?"جماعت، مضمون یا مواد تلاش کریں":"Search class, subject or material...";
+});
 render();
 </script>
-</body></html>
+</body>
+</html>
