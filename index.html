@@ -3,111 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ParhoPakistan helps Pakistani students find Class 9 to 12 past papers, pairing schemes, guess papers, notes and exam preparation resources.">
-<meta name="keywords" content="Pakistan past papers, class 9, class 10, 1st year, 2nd year, pairing schemes, guess papers, Punjab boards">
+<meta name="description" content="ParhoPakistan is a student-friendly directory for Class 9–12 past papers, notes, MCQs, pairing schemes and exam practice resources across Pakistan.">
+<meta name="keywords" content="Pakistan past papers, FBISE, BISE, class 9, class 10, class 11, class 12, ICS, FSc, FA, ICom, notes, MCQs, pairing schemes">
 <meta name="theme-color" content="#123b70">
-<title>ParhoPakistan — Past Papers, Pairing Schemes & Notes</title>
+<title>ParhoPakistan — Study Resources for Classes 9–12</title>
 <style>
-:root{--navy:#123b70;--blue:#1769aa;--sky:#eaf4ff;--ink:#172334;--muted:#64748b;--line:#dce5ef;--bg:#f6f8fb;--green:#13845b}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+:root{--navy:#102f59;--blue:#1769aa;--green:#11845b;--ink:#172334;--muted:#607086;--line:#dce5ef;--bg:#f4f7fb;--card:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
 a{color:inherit}.top{background:#0b274a;color:#e8f2ff;text-align:center;padding:8px 14px;font-size:13px}
-header{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
-.nav{max-width:1120px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-weight:800;color:var(--navy);font-size:24px;text-decoration:none;letter-spacing:-.6px}.brand span{color:var(--green)}
-nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;color:#34445a;font-weight:600;font-size:14px}
-.hero{background:linear-gradient(120deg,#102f59,#1769aa);color:white;padding:58px 20px 54px}
-.hero-inner{max-width:1120px;margin:auto}.eyebrow{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#b9ddff;font-weight:bold}
-h1{font-size:clamp(32px,5vw,52px);line-height:1.12;max-width:760px;margin:12px 0}
-.hero p{max-width:680px;color:#e1efff;font-size:17px}
-.searchbar{display:flex;max-width:680px;margin-top:24px;background:white;padding:6px;border-radius:12px;gap:6px}
-.searchbar input{border:0;outline:0;flex:1;min-width:0;padding:12px;font-size:15px;border-radius:8px}.searchbar button,.btn{border:0;background:var(--green);color:white;padding:12px 18px;border-radius:8px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
-.wrap{max-width:1120px;margin:auto;padding:34px 20px}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}
-h2{font-size:27px;margin:0;color:#152b46}.sub{color:var(--muted);margin:5px 0 0}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
-.class-card,.panel,.resource{background:white;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 3px 12px #142b4610}
-.class-card{cursor:pointer;transition:.15s}.class-card:hover{transform:translateY(-3px);border-color:#9fc6eb}
-.class-num{font-size:13px;color:var(--blue);font-weight:800;text-transform:uppercase}.class-card h3{margin:7px 0 4px;font-size:21px}.class-card p{margin:0;color:var(--muted);font-size:13px}
-.filters{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
-select,.filter-input{padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--ink);font-size:14px}
-.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.resource h3{margin:8px 0 5px;font-size:18px}.resource p{color:var(--muted);font-size:14px;margin:0 0 14px}
-.tag{display:inline-block;background:var(--sky);color:#15558e;border-radius:30px;padding:4px 9px;font-size:11px;font-weight:800}
-.status{font-size:12px;color:#9a5a12;background:#fff4df;padding:5px 8px;border-radius:20px}
-.resource .btn{font-size:13px;padding:9px 12px;background:#e8f1fa;color:var(--navy);cursor:pointer}
-.boards{display:flex;flex-wrap:wrap;gap:9px}.board{background:white;border:1px solid var(--line);padding:10px 14px;border-radius:9px;font-size:13px;font-weight:600}
-.info{background:#eaf4ff;border:1px solid #cfe4fa;border-radius:14px;padding:20px;margin-top:28px}
-.info p{margin:6px 0 0;color:#36516e;font-size:14px}
-footer{background:#0b274a;color:#d9e8f8;margin-top:30px;padding:30px 20px}
-.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-footer a{color:#d9e8f8}.small{font-size:12px;color:#b8cce2}
-.empty{grid-column:1/-1;background:white;padding:22px;border-radius:12px;color:var(--muted);border:1px dashed #b8c9dc}
-@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.resource-grid{grid-template-columns:repeat(2,1fr)}nav{gap:10px}}
-@media(max-width:560px){.nav{align-items:flex-start;flex-direction:column}.grid,.resource-grid{grid-template-columns:1fr}.hero{padding:42px 18px}.searchbar{flex-direction:column}.searchbar button{width:100%}.section-head{align-items:flex-start;flex-direction:column}}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{max-width:1160px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{font-weight:800;color:var(--navy);font-size:24px;text-decoration:none;letter-spacing:-.6px}.brand span{color:var(--green)}nav{display:flex;gap:17px;align-items:center;flex-wrap:wrap}nav a{text-decoration:none;color:#34445a;font-weight:700;font-size:14px}
+.lang{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 10px;font-weight:700;cursor:pointer;color:var(--navy)}
+.hero{background:linear-gradient(120deg,#102f59,#1769aa);color:#fff;padding:54px 20px}.hero-inner{max-width:1120px;margin:auto}.eyebrow{font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:#b9ddff;font-weight:bold}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.12;max-width:780px;margin:12px 0}.hero p{max-width:700px;color:#e1efff;font-size:17px}
+.searchbar{display:flex;max-width:760px;margin-top:22px;background:#fff;padding:6px;border-radius:12px;gap:6px}.searchbar input{border:0;outline:0;flex:1;min-width:0;padding:12px;font-size:15px;border-radius:8px}.searchbar button,.btn{border:0;background:var(--green);color:#fff;padding:12px 17px;border-radius:8px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+.wrap{max-width:1160px;margin:auto;padding:32px 20px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:17px}
+h2{font-size:26px;margin:0;color:#152b46}.sub{color:var(--muted);margin:5px 0 0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.class-card,.panel,.resource,.board-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 3px 12px #142b460d}
+.class-card{cursor:pointer;transition:.15s}.class-card:hover{transform:translateY(-3px);border-color:#9fc6eb}.class-num{font-size:12px;color:var(--blue);font-weight:800;text-transform:uppercase}.class-card h3{margin:7px 0 4px;font-size:21px}.class-card p{margin:0;color:var(--muted);font-size:13px}
+.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:17px 0}
+select,.filter-input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink);font-size:14px}
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.resource h3{margin:8px 0 5px;font-size:18px}.resource p{color:var(--muted);font-size:14px;margin:0 0 13px}
+.tag{display:inline-block;background:#eaf4ff;color:#15558e;border-radius:30px;padding:4px 9px;font-size:11px;font-weight:800}
+.status{font-size:12px;color:#8b5a12;background:#fff4df;padding:5px 8px;border-radius:20px;display:inline-block}
+.resource .btn{font-size:13px;padding:9px 12px;background:#e8f1fa;color:var(--navy)}.resource .btn[aria-disabled=true]{opacity:.6;cursor:not-allowed}
+.boards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.board-card{padding:14px}.board-card strong{display:block}.board-card a{font-size:13px;color:#1769aa;text-decoration:none;font-weight:700}
+.notice{background:#eaf4ff;border:1px solid #cfe4fa;border-radius:14px;padding:18px;margin-top:20px}.notice p{margin:6px 0 0;color:#36516e;font-size:14px}
+footer{background:#0b274a;color:#d9e8f8;margin-top:26px;padding:28px 20px}.footer-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{font-size:12px;color:#b8cce2}
+.empty{grid-column:1/-1;background:#fff;padding:22px;border-radius:12px;color:var(--muted);border:1px dashed #b8c9dc}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.resource-grid,.boards-grid{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.nav{align-items:flex-start;flex-direction:column}.grid,.resource-grid,.boards-grid,.filters{grid-template-columns:1fr}nav{gap:10px}.hero{padding:40px 18px}.searchbar{flex-direction:column}.searchbar button{width:100%}.section-head{align-items:flex-start;flex-direction:column}}
 </style>
 </head>
 <body>
-<div class="top">Free study resources for Pakistani students — Classes 9 to 12</div>
+<div class="top" data-en="Free study resources for Pakistani students — Classes 9 to 12" data-ur="پاکستانی طلبہ کے لیے مفت تعلیمی مواد — جماعت نہم تا بارہویں">Free study resources for Pakistani students — Classes 9 to 12</div>
 <header><div class="nav">
 <a class="brand" href="#">Parho<span>Pakistan</span></a>
-<nav><a href="#classes">Classes</a><a href="#resources">Study Material</a><a href="#boards">Boards</a><a href="#about">About</a></nav>
+<nav><a href="#classes" data-en="Classes" data-ur="جماعتیں">Classes</a><a href="#library" data-en="Study Material" data-ur="تعلیمی مواد">Study Material</a><a href="#boards" data-en="Boards" data-ur="بورڈز">Boards</a><a href="#about" data-en="About" data-ur="ہمارے بارے میں">About</a></nav>
+<button class="lang" id="langToggle" type="button">اردو</button>
 </div></header>
 <section class="hero"><div class="hero-inner">
-<div class="eyebrow">Learn smarter • Prepare better</div>
-<h1>Your Exam Preparation Starts Here.</h1>
-<p>Find class-wise past papers, pairing schemes, guess papers, notes and practice material for Pakistani students — all in one place.</p>
-<div class="searchbar"><input id="search" type="search" placeholder="Search e.g. Class 10 Biology past papers"><button onclick="applyFilters()">Search resources</button></div>
+<div class="eyebrow" data-en="Learn smarter • Prepare better" data-ur="بہتر سیکھیں • بہتر تیاری کریں">Learn smarter • Prepare better</div>
+<h1 data-en="Your Exam Preparation Starts Here." data-ur="آپ کی امتحانی تیاری یہاں سے شروع ہوتی ہے۔">Your Exam Preparation Starts Here.</h1>
+<p data-en="Find class-wise past papers, pairing schemes, guess papers, notes, MCQs and practice material for Pakistani students — all in one place." data-ur="پاکستانی طلبہ کے لیے جماعت کے مطابق گزشتہ پرچے، پیئرنگ اسکیمز، گیس پیپرز، نوٹس، ایم سی کیوز اور پریکٹس مواد ایک ہی جگہ تلاش کریں۔">Find class-wise past papers, pairing schemes, guess papers, notes, MCQs and practice material for Pakistani students — all in one place.</p>
+<div class="searchbar"><input id="search" type="search" placeholder="Search: Class 11 ICS Computer Science"><button id="searchBtn" data-en="Search resources" data-ur="مواد تلاش کریں">Search resources</button></div>
 </div></section>
 <main>
 <section class="wrap" id="classes">
-<div class="section-head"><div><h2>Choose Your Class</h2><p class="sub">Select your class to explore relevant study material.</p></div></div>
+<div class="section-head"><div><h2 data-en="Choose Your Class" data-ur="اپنی جماعت منتخب کریں">Choose Your Class</h2><p class="sub" data-en="Select a class to filter the study library." data-ur="تعلیمی مواد دیکھنے کے لیے اپنی جماعت منتخب کریں۔">Select a class to filter the study library.</p></div></div>
 <div class="grid">
-<div class="class-card" onclick="setClass('9')"><div class="class-num">Matric</div><h3>Class 9</h3><p>Past papers, schemes, notes & practice</p></div>
-<div class="class-card" onclick="setClass('10')"><div class="class-num">Matric</div><h3>Class 10</h3><p>Past papers, schemes, notes & practice</p></div>
-<div class="class-card" onclick="setClass('11')"><div class="class-num">Intermediate</div><h3>Class 11</h3><p>FA, FSc, ICS & ICom resources</p></div>
-<div class="class-card" onclick="setClass('12')"><div class="class-num">Intermediate</div><h3>Class 12</h3><p>FA, FSc, ICS & ICom resources</p></div>
+<div class="class-card" data-class="9"><div class="class-num">Matric</div><h3>Class 9 / جماعت نہم</h3><p data-en="Papers, schemes, notes and practice" data-ur="پرچے، اسکیمز، نوٹس اور پریکٹس">Papers, schemes, notes and practice</p></div>
+<div class="class-card" data-class="10"><div class="class-num">Matric</div><h3>Class 10 / جماعت دہم</h3><p data-en="Papers, schemes, notes and practice" data-ur="پرچے، اسکیمز، نوٹس اور پریکٹس">Papers, schemes, notes and practice</p></div>
+<div class="class-card" data-class="11"><div class="class-num">Intermediate</div><h3>Class 11 / فرسٹ ایئر</h3><p>FA, FSc, ICS, ICom</p></div>
+<div class="class-card" data-class="12"><div class="class-num">Intermediate</div><h3>Class 12 / سیکنڈ ایئر</h3><p>FA, FSc, ICS, ICom</p></div>
 </div>
 </section>
-<section class="wrap" id="resources">
-<div class="section-head"><div><h2>Study Material Library</h2><p class="sub">Filter the library by class and resource type.</p></div></div>
+<section class="wrap" id="library">
+<div class="section-head"><div><h2 data-en="Study Material Library" data-ur="تعلیمی مواد کی لائبریری">Study Material Library</h2><p class="sub" data-en="Choose your class, board, subject and material type." data-ur="جماعت، بورڈ، مضمون اور مواد کی قسم منتخب کریں۔">Choose your class, board, subject and material type.</p></div></div>
 <div class="filters">
-<select id="classFilter" onchange="applyFilters()"><option value="">All classes</option><option value="9">Class 9</option><option value="10">Class 10</option><option value="11">Class 11</option><option value="12">Class 12</option></select>
-<select id="typeFilter" onchange="applyFilters()"><option value="">All resource types</option><option>Past Paper</option><option>Pairing Scheme</option><option>Guess Paper</option><option>Notes</option><option>MCQs</option></select>
-<select id="boardFilter" onchange="applyFilters()"><option value="">All Punjab Boards</option><option>Faisalabad</option><option>Lahore</option><option>Gujranwala</option><option>Multan</option><option>Rawalpindi</option><option>Sargodha</option><option>Bahawalpur</option><option>DG Khan</option><option>Sahiwal</option></select>
+<select id="classFilter" aria-label="Class"><option value="">All classes / تمام جماعتیں</option><option value="9">Class 9</option><option value="10">Class 10</option><option value="11">Class 11</option><option value="12">Class 12</option></select>
+<select id="boardFilter" aria-label="Board"><option value="">All Pakistan boards / تمام بورڈز</option></select>
+<select id="subjectFilter" aria-label="Subject"><option value="">All subjects / تمام مضامین</option></select>
+<select id="typeFilter" aria-label="Material type"><option value="">All material / تمام مواد</option><option>Past Paper</option><option>Pairing Scheme</option><option>Guess Paper</option><option>Notes</option><option>MCQs</option><option>Practice Test</option></select>
 </div>
 <div class="resource-grid" id="resourceGrid"></div>
-<div class="info"><strong>Content update notice</strong><p>This starter website includes the full class and resource structure. Real past-paper PDFs, verified board schemes and original guess papers must be added before publishing them as available downloads. We do not label missing files as real papers.</p></div>
+<div class="notice"><strong data-en="Important: content availability" data-ur="اہم: مواد کی دستیابی">Important: content availability</strong><p data-en="This version provides the working website structure and filters. A resource becomes downloadable only after its real PDF or document is uploaded and linked. We do not invent past papers, schemes or answer keys. Always verify current exam information with your own board." data-ur="اس ورژن میں ویب سائٹ کا ڈھانچہ اور فلٹرز کام کرتے ہیں۔ کوئی مواد اسی وقت ڈاؤن لوڈ ہوگا جب اس کی اصل PDF یا دستاویز اپ لوڈ کرکے لنک کیا جائے۔ ہم فرضی پرچے یا اسکیمز شامل نہیں کرتے۔ امتحانی معلومات اپنے متعلقہ بورڈ سے ضرور تصدیق کریں۔">This version provides the working website structure and filters. A resource becomes downloadable only after its real PDF or document is uploaded and linked. We do not invent past papers, schemes or answer keys. Always verify current exam information with your own board.</p></div>
 </section>
-<section class="wrap" id="boards">
-<div class="section-head"><div><h2>Punjab Boards</h2><p class="sub">Board-wise organization for students across Punjab.</p></div></div>
-<div class="boards"><span class="board">BISE Faisalabad</span><span class="board">BISE Lahore</span><span class="board">BISE Gujranwala</span><span class="board">BISE Multan</span><span class="board">BISE Rawalpindi</span><span class="board">BISE Sargodha</span><span class="board">BISE Bahawalpur</span><span class="board">BISE DG Khan</span><span class="board">BISE Sahiwal</span></div>
-</section>
-<section class="wrap" id="about"><div class="panel"><h2>About ParhoPakistan</h2><p class="sub">Our goal is to make exam preparation easier by organizing useful, accurate and student-friendly resources. Always confirm exam dates and official schemes with your relevant board.</p></div></section>
+<section class="wrap" id="boards"><div class="section-head"><div><h2 data-en="Education Boards in Pakistan" data-ur="پاکستان کے تعلیمی بورڈز">Education Boards in Pakistan</h2><p class="sub" data-en="Select your board from the filter above. Official websites are linked where available." data-ur="اوپر فلٹر میں اپنا بورڈ منتخب کریں۔ جہاں دستیاب ہو وہاں سرکاری ویب سائٹ کا لنک دیا گیا ہے۔">Select your board from the filter above. Official websites are linked where available.</p></div></div><div class="boards-grid" id="boardDirectory"></div></section>
+<section class="wrap" id="about"><div class="panel"><h2 data-en="About ParhoPakistan" data-ur="ParhoPakistan کے بارے میں">About ParhoPakistan</h2><p class="sub" data-en="An independent student resource project. ParhoPakistan is not affiliated with any examination board or government department. Board names and logos belong to their respective owners. Contact details and verified resource links should be added before applying for advertising." data-ur="یہ طلبہ کے لیے ایک آزاد تعلیمی منصوبہ ہے۔ ParhoPakistan کسی امتحانی بورڈ یا سرکاری محکمے سے وابستہ نہیں۔ اشتہارات کے لیے درخواست دینے سے پہلے رابطے کی معلومات اور تصدیق شدہ مواد کے لنکس شامل کریں۔">An independent student resource project. ParhoPakistan is not affiliated with any examination board or government department. Board names and logos belong to their respective owners. Contact details and verified resource links should be added before applying for advertising.</p></div></section>
 </main>
-<footer><div class="footer-inner"><div><strong>ParhoPakistan</strong><p class="small">Study smart. Prepare with confidence.</p></div><div class="small">Contact: add-your-email@example.com<br>© <span id="year"></span> ParhoPakistan</div></div></footer>
+<footer><div class="footer-inner"><div><strong>ParhoPakistan</strong><p class="small" data-en="Study smart. Prepare with confidence." data-ur="سمجھداری سے پڑھیں، اعتماد سے تیاری کریں۔">Study smart. Prepare with confidence.</p></div><div class="small">Contact: add-your-email@example.com<br>© <span id="year"></span> ParhoPakistan</div></div></footer>
 <script>
-const resources = [
- {title:"Class 9 — Past Papers",cls:"9",type:"Past Paper",board:"Faisalabad",desc:"Add verified subject-wise past-paper PDFs here."},
- {title:"Class 9 — Pairing Schemes",cls:"9",type:"Pairing Scheme",board:"Faisalabad",desc:"Add the latest officially confirmed scheme here."},
- {title:"Class 9 — Guess Papers",cls:"9",type:"Guess Paper",board:"Faisalabad",desc:"Add original practice questions; not guaranteed exam predictions."},
- {title:"Class 10 — Past Papers",cls:"10",type:"Past Paper",board:"Faisalabad",desc:"Add verified subject-wise past-paper PDFs here."},
- {title:"Class 10 — Pairing Schemes",cls:"10",type:"Pairing Scheme",board:"Faisalabad",desc:"Add the latest officially confirmed scheme here."},
- {title:"Class 10 — Guess Papers",cls:"10",type:"Guess Paper",board:"Faisalabad",desc:"Add original practice questions; not guaranteed exam predictions."},
- {title:"Class 11 — Past Papers",cls:"11",type:"Past Paper",board:"Faisalabad",desc:"Add verified subject-wise past-paper PDFs here."},
- {title:"Class 11 — Pairing Schemes",cls:"11",type:"Pairing Scheme",board:"Faisalabad",desc:"Add the latest officially confirmed scheme here."},
- {title:"Class 11 — Guess Papers",cls:"11",type:"Guess Paper",board:"Faisalabad",desc:"Add original practice questions; not guaranteed exam predictions."},
- {title:"Class 12 — Past Papers",cls:"12",type:"Past Paper",board:"Faisalabad",desc:"Add verified subject-wise past-paper PDFs here."},
- {title:"Class 12 — Pairing Schemes",cls:"12",type:"Pairing Scheme",board:"Faisalabad",desc:"Add the latest officially confirmed scheme here."},
- {title:"Class 12 — Guess Papers",cls:"12",type:"Guess Paper",board:"Faisalabad",desc:"Add original practice questions; not guaranteed exam predictions."}
+const boards = [
+["FBISE Islamabad","https://www.fbise.edu.pk/"],["BISE Lahore","https://www.biselahore.com/"],["BISE Faisalabad","https://www.bisefsd.edu.pk/"],["BISE Gujranwala","https://www.bisegrw.edu.pk/"],["BISE Rawalpindi","https://www.biserawalpindi.edu.pk/"],["BISE Multan","https://web.bisemultan.edu.pk/"],["BISE Sargodha","https://www.bisesargodha.edu.pk/"],["BISE Bahawalpur","https://www.bisebwp.edu.pk/"],["BISE D.G. Khan","https://www.bisedgkhan.edu.pk/"],["BISE Sahiwal","https://bisesahiwal.edu.pk/"],
+["BSEK Karachi (Matric)","https://www.bsek.edu.pk/"],["BIEK Karachi (Intermediate)","https://www.biek.edu.pk/"],["BISE Hyderabad","https://www.biseh.edu.pk/"],["BISE Sukkur","https://www.bisesuks.edu.pk/"],["BISE Larkana","https://www.biselrk.edu.pk/"],["BISE Mirpurkhas","https://bisempk.edu.pk/"],
+["BISE Peshawar","https://www.bisep.edu.pk/"],["BISE Abbottabad","https://www.biseatd.edu.pk/"],["BISE Bannu","https://www.biseb.edu.pk/"],["BISE Mardan","https://web.bisemdn.edu.pk/"],["BISE Swat","https://www.bisess.edu.pk/"],["BISE Malakand","https://www.bisemalakand.edu.pk/"],["BISE Kohat","https://www.bisekt.edu.pk/"],["BISE D.I. Khan","https://www.bisedik.edu.pk/"],
+["BBISE Quetta","https://bbiseqta.edu.pk/"],["AJK BISE Mirpur","https://ajkbise.net/"]
 ];
-function setClass(c){document.getElementById('classFilter').value=c;applyFilters();document.getElementById('resources').scrollIntoView({behavior:'smooth'});}
-function applyFilters(){
- const c=document.getElementById('classFilter').value,t=document.getElementById('typeFilter').value,b=document.getElementById('boardFilter').value,q=document.getElementById('search').value.toLowerCase();
- const found=resources.filter(r=>(!c||r.cls===c)&&(!t||r.type===t)&&(!b||r.board===b)&&(!q||(r.title+' '+r.desc+' '+r.type+' '+r.cls).toLowerCase().includes(q)));
- const grid=document.getElementById('resourceGrid');
- if(!found.length){grid.innerHTML='<div class="empty">No matching resource yet. Try another filter.</div>';return;}
- grid.innerHTML=found.map(r=>`<article class="resource"><span class="tag">Class ${r.cls} · ${r.type}</span><h3>${r.title}</h3><p>${r.desc}</p><span class="status">PDF coming soon</span></article>`).join('');
-}
-document.getElementById('year').textContent=new Date().getFullYear();applyFilters();
+const subjects = ["English","Urdu","Islamiyat","Pakistan Studies","Mathematics","Physics","Chemistry","Biology","Computer Science","General Science","Economics","Statistics","Principles of Accounting","Principles of Commerce","Education","Civics"];
+const materialTypes = ["Past Paper","Pairing Scheme","Guess Paper","Notes","MCQs","Practice Test"];
+const data=[];
+for(let c=9;c<=12;c++){for(const s of subjects){for(const t of materialTypes){data.push({cls:String(c),board:"All Boards",subject:s,type:t,title:`Class ${c} ${s} — ${t}`,desc:"No verified file has been added yet. Add a real PDF or original resource before publishing."});}}}
+const boardSelect=document.getElementById("boardFilter"),subjectSelect=document.getElementById("subjectFilter");
+boards.forEach(([name])=>{const o=document.createElement("option");o.value=name;o.textContent=name;boardSelect.appendChild(o)});
+subjects.forEach(name=>{const o=document.createElement("option");o.value=name;o.textContent=name;subjectSelect.appendChild(o)});
+const directory=document.getElementById("boardDirectory");
+boards.forEach(([name,url])=>{const el=document.createElement("article");el.className="board-card";const strong=document.createElement("strong");strong.textContent=name;const a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noopener";a.textContent="Official board website ↗";el.append(strong,a);directory.appendChild(el)});
+function render(){const c=document.getElementById("classFilter").value,b=boardSelect.value,s=subjectSelect.value,t=document.getElementById("typeFilter").value,q=document.getElementById("search").value.toLowerCase().trim();const found=data.filter(r=>(!c||r.cls===c)&&(!s||r.subject===s)&&(!t||r.type===t)&&(!q||(r.title+" "+r.subject+" "+r.type+" "+r.cls).toLowerCase().includes(q)));const grid=document.getElementById("resourceGrid");grid.innerHTML="";const list=found.slice(0,36);if(!list.length){grid.innerHTML='<div class="empty">No matching category found. Try changing the filters.</div>';return;}list.forEach(r=>{const card=document.createElement("article");card.className="resource";const tag=document.createElement("span");tag.className="tag";tag.textContent=`Class ${r.cls} · ${r.type}`;const h=document.createElement("h3");h.textContent=r.title;const p=document.createElement("p");p.textContent=r.desc;const status=document.createElement("span");status.className="status";status.textContent="File not added yet";card.append(tag,h,p,status);grid.appendChild(card)});}
+function setClass(c){document.getElementById("classFilter").value=c;render();document.getElementById("library").scrollIntoView({behavior:"smooth"});}
+document.querySelectorAll(".class-card").forEach(el=>el.addEventListener("click",()=>setClass(el.dataset.class)));
+["classFilter","boardFilter","subjectFilter","typeFilter"].forEach(id=>document.getElementById(id).addEventListener("change",render));
+document.getElementById("searchBtn").addEventListener("click",render);document.getElementById("search").addEventListener("keydown",e=>{if(e.key==="Enter")render()});
+document.getElementById("year").textContent=new Date().getFullYear();
+let urdu=false;document.getElementById("langToggle").addEventListener("click",()=>{urdu=!urdu;document.documentElement.lang=urdu?"ur":"en";document.querySelectorAll("[data-en][data-ur]").forEach(el=>el.textContent=urdu?el.dataset.ur:el.dataset.en);document.getElementById("langToggle").textContent=urdu?"English":"اردو";});
+render();
 </script>
 </body></html>
