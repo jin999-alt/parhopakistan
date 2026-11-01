@@ -4,243 +4,268 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ParhoPakistan - Free study resources and model papers for Pakistani board students.">
+<meta name="description" content="ParhoPakistan provides free Lahore Board model papers and study resources for Pakistani students from Class 9 to 12.">
 <meta name="theme-color" content="#102a43">
-<title>ParhoPakistan | Study Resources</title>
+<title>ParhoPakistan | Free Study Resources</title>
 
 <style>
 :root{
---navy:#102a43;
---blue:#1769aa;
---sky:#eaf4fb;
---ink:#182b3a;
---muted:#607487;
---line:#dce6ee;
---white:#fff;
---yellow:#ffca55;
---green:#13795b;
+  --navy:#102a43;
+  --blue:#1769aa;
+  --sky:#eaf4fb;
+  --ink:#182b3a;
+  --muted:#607487;
+  --line:#dce6ee;
+  --white:#fff;
+  --yellow:#ffca55;
+  --green:#13795b;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f8fb;
-color:var(--ink);
-line-height:1.55;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f8fb;
+  color:var(--ink);
+  line-height:1.6;
 }
+a{color:var(--blue)}
 header{
-background:linear-gradient(120deg,#102a43,#1769aa);
-color:white;
-padding:18px max(20px,calc((100% - 1160px)/2));
+  background:linear-gradient(120deg,#102a43,#1769aa);
+  color:white;
+  padding:18px max(20px,calc((100% - 1160px)/2));
 }
 .top{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:16px;
-flex-wrap:wrap;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
 }
 .brand{font-size:25px;font-weight:800}
 .brand span{color:#8ed6ff}
 nav{display:flex;gap:16px;flex-wrap:wrap}
 nav a{
-color:white;
-text-decoration:none;
-font-weight:600;
-font-size:14px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
 }
 nav a:hover{text-decoration:underline}
 .lang{
-border:1px solid #ffffff88;
-background:#ffffff18;
-color:white;
-border-radius:10px;
-padding:9px 13px;
-cursor:pointer;
-font-weight:700;
+  border:1px solid #ffffff88;
+  background:#ffffff18;
+  color:white;
+  border-radius:10px;
+  padding:9px 13px;
+  cursor:pointer;
+  font-weight:700;
 }
 .hero{
-max-width:1160px;
-margin:36px auto 22px;
-padding:0 20px 30px;
+  max-width:1160px;
+  margin:36px auto 22px;
+  padding:0 20px 30px;
 }
 .hero h1{
-font-size:clamp(30px,5vw,48px);
-line-height:1.12;
-margin:0 0 12px;
-max-width:760px;
+  font-size:clamp(30px,5vw,48px);
+  line-height:1.12;
+  margin:0 0 12px;
+  max-width:760px;
 }
 .hero p{
-max-width:720px;
-color:#e2f1fc;
-font-size:17px;
-margin:0 0 22px;
+  max-width:720px;
+  color:#e2f1fc;
+  font-size:17px;
+  margin:0 0 22px;
 }
 .searchrow{
-display:grid;
-grid-template-columns:1fr auto;
-gap:10px;
-max-width:760px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:10px;
+  max-width:760px;
 }
 .searchrow input{
-width:100%;
-padding:15px;
-border:0;
-border-radius:12px;
-font-size:16px;
+  width:100%;
+  padding:15px;
+  border:0;
+  border-radius:12px;
+  font-size:16px;
 }
 .searchrow button{
-background:var(--yellow);
-color:#263746;
-border:0;
-border-radius:12px;
-padding:13px 18px;
-font-weight:800;
-cursor:pointer;
+  background:var(--yellow);
+  color:#263746;
+  border:0;
+  border-radius:12px;
+  padding:13px 20px;
+  font-weight:800;
+  cursor:pointer;
 }
-.searchrow button:hover{background:#ffd778}
 .wrap{
-max-width:1160px;
-margin:auto;
-padding:0 20px 55px;
+  max-width:1160px;
+  margin:auto;
+  padding:0 20px 55px;
 }
+section{scroll-margin-top:20px}
 .intro{
-display:flex;
-justify-content:space-between;
-align-items:end;
-gap:14px;
-flex-wrap:wrap;
-margin:28px 0 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:14px;
+  flex-wrap:wrap;
+  margin:34px 0 16px;
 }
 .intro h2{margin:0;font-size:25px}
 .intro p{margin:3px 0;color:var(--muted)}
 .filters{
-background:white;
-border:1px solid var(--line);
-border-radius:16px;
-padding:16px;
-display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:12px;
-box-shadow:0 5px 18px #18364b0a;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:16px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  box-shadow:0 5px 18px #18364b0a;
 }
 label{
-display:block;
-font-size:12px;
-font-weight:800;
-color:var(--muted);
-margin:0 0 5px;
+  display:block;
+  font-size:12px;
+  font-weight:800;
+  color:var(--muted);
+  margin:0 0 5px;
 }
 select,input{font:inherit}
 select{
-width:100%;
-padding:11px;
-border:1px solid var(--line);
-border-radius:10px;
-background:white;
-color:var(--ink);
+  width:100%;
+  padding:11px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:white;
+  color:var(--ink);
 }
 .grid{
-display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:15px;
-margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:15px;
+  margin-top:18px;
 }
 .card{
-background:white;
-border:1px solid var(--line);
-border-radius:15px;
-padding:17px;
-display:flex;
-flex-direction:column;
-gap:9px;
-min-height:190px;
-box-shadow:0 5px 18px #18364b08;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+  min-height:190px;
+  box-shadow:0 5px 18px #18364b08;
 }
 .tag{
-font-size:11px;
-font-weight:800;
-color:var(--blue);
-background:var(--sky);
-padding:5px 9px;
-border-radius:30px;
-align-self:flex-start;
+  font-size:11px;
+  font-weight:800;
+  color:var(--blue);
+  background:var(--sky);
+  padding:5px 9px;
+  border-radius:30px;
+  align-self:flex-start;
 }
 .card h3{margin:0;font-size:18px}
 .card p{margin:0;color:var(--muted);font-size:14px}
-.card a{
-margin-top:auto;
-color:var(--blue);
-font-weight:800;
-text-decoration:none;
+.card a.download-btn{
+  display:block;
+  margin-top:auto;
+  text-align:center;
+  background:var(--blue);
+  color:white;
+  padding:12px;
+  border-radius:10px;
+  font-weight:800;
+  text-decoration:none;
 }
-.card a:hover{text-decoration:underline}
+.card a.download-btn:hover{background:var(--navy)}
 .download-grid{
-display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:15px;
-margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:15px;
+  margin-top:18px;
 }
-.download-btn{
-display:block;
-text-align:center;
-background:var(--blue);
-color:white!important;
-padding:12px;
-border-radius:10px;
-font-weight:800;
-margin-top:auto;
-text-decoration:none!important;
-}
-.download-btn:hover{background:var(--navy)}
 .notice{
-margin-top:22px;
-padding:17px;
-border-radius:14px;
-background:#fff8e8;
-border:1px solid #f1dfb7;
-color:#614b1c;
+  margin-top:22px;
+  padding:17px;
+  border-radius:14px;
+  background:#fff8e8;
+  border:1px solid #f1dfb7;
+  color:#614b1c;
+}
+.status{
+  display:inline-block;
+  padding:4px 9px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:800;
+  background:#e5f5ed;
+  color:var(--green);
+}
+.empty{
+  grid-column:1/-1;
+  background:white;
+  border:1px dashed #b9c9d6;
+  padding:25px;
+  border-radius:14px;
+  text-align:center;
+  color:var(--muted);
 }
 .boardgrid{
-display:grid;
-grid-template-columns:repeat(4,minmax(0,1fr));
-gap:10px;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
 }
 .board{
-background:white;
-border:1px solid var(--line);
-padding:13px;
-border-radius:12px;
-font-size:14px;
+  background:white;
+  border:1px solid var(--line);
+  padding:13px;
+  border-radius:12px;
+  font-size:14px;
 }
 .board b{display:block}
-.empty{
-grid-column:1/-1;
-background:white;
-border:1px dashed #b9c9d6;
-padding:25px;
-border-radius:14px;
-text-align:center;
-color:var(--muted);
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:15px;
 }
+.info-box{
+  background:white;
+  border:1px solid var(--line);
+  padding:18px;
+  border-radius:14px;
+}
+.info-box h3{margin:0 0 7px}
+.info-box p{margin:0;color:var(--muted);font-size:14px}
 .small{font-size:13px;color:var(--muted)}
 footer{
-background:var(--navy);
-color:#dbe8f2;
-padding:28px 20px;
-text-align:center;
+  background:var(--navy);
+  color:#dbe8f2;
+  padding:28px 20px;
+  text-align:center;
 }
+footer a{color:#bde5ff}
+.footer-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:18px;
+  margin:12px 0;
+}
+footer p{margin:6px 0}
 @media(max-width:800px){
-.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-.download-grid{grid-template-columns:1fr}
-.boardgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .boardgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .info-grid{grid-template-columns:1fr}
 }
 @media(max-width:520px){
-.searchrow{grid-template-columns:1fr}
-.filters,.grid,.download-grid{grid-template-columns:1fr}
-.hero{margin-top:25px}
-.brand{font-size:22px}
+  .searchrow{grid-template-columns:1fr}
+  .filters,.grid,.download-grid{grid-template-columns:1fr}
+  .hero{margin-top:25px}
+  .brand{font-size:22px}
 }
 </style>
 </head>
@@ -248,310 +273,418 @@ text-align:center;
 <body>
 
 <header>
-<div class="top">
-<div class="brand">Parho<span>Pakistan</span></div>
+  <div class="top">
+    <div class="brand">Parho<span>Pakistan</span></div>
 
-<nav>
-<a href="#resources">Resources</a>
-<a href="#downloads">Downloads</a>
-<a href="#boards">Boards</a>
-<a href="#about">About</a>
-</nav>
+    <nav>
+      <a href="#resources">Resources</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#boards">Boards</a>
+      <a href="#about">About</a>
+    </nav>
 
-<button class="lang" id="langBtn" type="button">اردو</button>
-</div>
+    <button class="lang" id="langBtn" type="button">اردو</button>
+  </div>
 
-<section class="hero">
-<h1 data-en="Study smarter. Prepare with confidence."
-data-ur="سمجھداری سے پڑھیں، اعتماد سے تیاری کریں۔">
-Study smarter. Prepare with confidence.
-</h1>
+  <section class="hero">
+    <h1 data-en="Study smarter. Prepare with confidence."
+        data-ur="سمجھداری سے پڑھیں، اعتماد سے تیاری کریں۔">
+      Study smarter. Prepare with confidence.
+    </h1>
 
-<p data-en="Free study resources and model papers for Pakistani board students from Class 9 to Class 12."
-data-ur="جماعت نہم سے بارہویں تک پاکستانی طلبہ کے لیے مفت تعلیمی مواد اور ماڈل پیپرز۔">
-Free study resources and model papers for Pakistani board students from Class 9 to Class 12.
-</p>
+    <p data-en="Free study resources and model papers for Pakistani students from Class 9 to Class 12."
+       data-ur="جماعت نہم سے بارہویں تک پاکستانی طلبہ کے لیے مفت تعلیمی مواد اور ماڈل پیپرز۔">
+      Free study resources and model papers for Pakistani students from Class 9 to Class 12.
+    </p>
 
-<div class="searchrow">
-<input id="search" type="search"
-placeholder="Search class or model papers..."
-aria-label="Search study resources">
-<button id="searchBtn" type="button">Search</button>
-</div>
-</section>
+    <div class="searchrow">
+      <input id="search" type="search"
+        placeholder="Search class, subject or material..."
+        aria-label="Search resources">
+      <button id="searchBtn" type="button">Search</button>
+    </div>
+  </section>
 </header>
 
 <main class="wrap">
 
-<section id="resources">
+  <!-- RESOURCES -->
+  <section id="resources">
+    <div class="intro">
+      <div>
+        <h2>Find Your Study Material</h2>
+        <p>Choose a class and material type to find available resources.</p>
+      </div>
+    </div>
 
-<div class="intro">
-<div>
-<h2>Find Your Study Material</h2>
-<p>Choose your class and find available Lahore Board model papers.</p>
-</div>
-</div>
+    <div class="filters">
+      <div>
+        <label for="boardFilter">BOARD</label>
+        <select id="boardFilter">
+          <option value="lahore">BISE Lahore</option>
+        </select>
+      </div>
 
-<div class="filters">
+      <div>
+        <label for="classFilter">CLASS</label>
+        <select id="classFilter">
+          <option value="all">All Classes</option>
+          <option value="9">Class 9</option>
+          <option value="10">Class 10</option>
+          <option value="11">Class 11</option>
+          <option value="12">Class 12</option>
+        </select>
+      </div>
 
-<div>
-<label for="boardFilter">BOARD</label>
-<select id="boardFilter">
-<option value="lahore">BISE Lahore</option>
-</select>
-</div>
+      <div>
+        <label for="typeFilter">MATERIAL TYPE</label>
+        <select id="typeFilter">
+          <option value="all">All Material Types</option>
+          <option value="Books">Books</option>
+          <option value="Model Papers">Model Papers</option>
+          <option value="Pairing Schemes">Pairing Schemes</option>
+          <option value="Past Papers">Past Papers</option>
+          <option value="Notes">Notes</option>
+          <option value="MCQs">MCQs</option>
+        </select>
+      </div>
+    </div>
 
-<div>
-<label for="classFilter">CLASS</label>
-<select id="classFilter">
-<option value="all">All Classes</option>
-<option value="9">Class 9</option>
-<option value="10">Class 10</option>
-<option value="11">Class 11</option>
-<option value="12">Class 12</option>
-</select>
-</div>
+    <div class="grid" id="resourceGrid"></div>
+    <p class="small" id="resultCount" aria-live="polite"></p>
 
-</div>
+    <div class="notice">
+      <b>Important:</b>
+      ParhoPakistan is an independent student resource website. Always check your board's latest syllabus and examination instructions.
+    </div>
+  </section>
 
-<div class="grid" id="resourceGrid"></div>
-<p class="small" id="resultCount" aria-live="polite"></p>
+  <!-- CLASS-WISE PDF DOWNLOADS -->
+  <section id="downloads">
+    <div class="intro">
+      <div>
+        <h2>Lahore Board Model Papers</h2>
+        <p>Download the available PDF model papers for each class.</p>
+      </div>
+    </div>
 
-<div class="notice">
-<b>Important:</b>
-These are uploaded Lahore Board model paper PDFs. Always verify the syllabus and paper scheme for your own board and exam year.
-</div>
+    <div class="download-grid">
 
-</section>
+      <article class="card">
+        <span class="tag">CLASS 9 · LAHORE</span>
+        <h3>Class 9 Model Papers</h3>
+        <p>Uploaded Lahore Board model papers for Class 9.</p>
+        <span class="status">PDF available</span>
+        <a class="download-btn"
+          href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_9th%20lahore.pdf"
+          target="_blank" rel="noopener noreferrer">
+          Download Class 9 PDF ↓
+        </a>
+      </article>
 
-<section id="downloads">
+      <article class="card">
+        <span class="tag">CLASS 10 · LAHORE</span>
+        <h3>Class 10 Model Papers</h3>
+        <p>Uploaded Lahore Board model papers for Class 10.</p>
+        <span class="status">PDF available</span>
+        <a class="download-btn"
+          href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_10th%20lahore.pdf"
+          target="_blank" rel="noopener noreferrer">
+          Download Class 10 PDF ↓
+        </a>
+      </article>
 
-<div class="intro">
-<div>
-<h2>Class-wise PDF Downloads</h2>
-<p>Download Lahore Board model papers for Classes 9, 10, 11 and 12.</p>
-</div>
-</div>
+      <article class="card">
+        <span class="tag">CLASS 11 · LAHORE</span>
+        <h3>Class 11 Model Papers</h3>
+        <p>Uploaded Lahore Board model papers for Class 11.</p>
+        <span class="status">PDF available</span>
+        <a class="download-btn"
+          href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_11th%20lahore.pdf"
+          target="_blank" rel="noopener noreferrer">
+          Download Class 11 PDF ↓
+        </a>
+      </article>
 
-<div class="download-grid">
+      <article class="card">
+        <span class="tag">CLASS 12 · LAHORE</span>
+        <h3>Class 12 Model Papers</h3>
+        <p>Uploaded Lahore Board model papers for Class 12.</p>
+        <span class="status">PDF available</span>
+        <a class="download-btn"
+          href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_12th%20lahore.pdf"
+          target="_blank" rel="noopener noreferrer">
+          Download Class 12 PDF ↓
+        </a>
+      </article>
 
-<article class="card">
-<span class="tag">CLASS 9 · LAHORE</span>
-<h3>Class 9 Model Papers</h3>
-<p>Download the uploaded Lahore Board Class 9 model papers PDF.</p>
-<a class="download-btn"
-href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_9th%20lahore.pdf"
-target="_blank" rel="noopener noreferrer">
-Download Class 9 PDF ↓
-</a>
-</article>
+    </div>
+  </section>
 
-<article class="card">
-<span class="tag">CLASS 10 · LAHORE</span>
-<h3>Class 10 Model Papers</h3>
-<p>Download the uploaded Lahore Board Class 10 model papers PDF.</p>
-<a class="download-btn"
-href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_10th%20lahore.pdf"
-target="_blank" rel="noopener noreferrer">
-Download Class 10 PDF ↓
-</a>
-</article>
+  <!-- MATERIAL CATEGORIES -->
+  <section id="categories">
+    <div class="intro">
+      <div>
+        <h2>Study Material Categories</h2>
+        <p>Each type of study resource has its own category.</p>
+      </div>
+    </div>
 
-<article class="card">
-<span class="tag">CLASS 11 · LAHORE</span>
-<h3>Class 11 Model Papers</h3>
-<p>Download the uploaded Lahore Board Class 11 model papers PDF.</p>
-<a class="download-btn"
-href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_11th%20lahore.pdf"
-target="_blank" rel="noopener noreferrer">
-Download Class 11 PDF ↓
-</a>
-</article>
+    <div class="info-grid">
+      <div class="info-box">
+        <h3>📚 Books</h3>
+        <p>Textbooks will appear here when their files are uploaded.</p>
+      </div>
 
-<article class="card">
-<span class="tag">CLASS 12 · LAHORE</span>
-<h3>Class 12 Model Papers</h3>
-<p>Download the uploaded Lahore Board Class 12 model papers PDF.</p>
-<a class="download-btn"
-href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_12th%20lahore.pdf"
-target="_blank" rel="noopener noreferrer">
-Download Class 12 PDF ↓
-</a>
-</article>
+      <div class="info-box">
+        <h3>📝 Model Papers</h3>
+        <p>Lahore Board model papers are available for Classes 9, 10, 11 and 12.</p>
+      </div>
 
-</div>
-</section>
+      <div class="info-box">
+        <h3>📋 Pairing Schemes</h3>
+        <p>Pairing schemes will be listed separately when their files are uploaded.</p>
+      </div>
 
-<section id="boards">
-<div class="intro">
-<div>
-<h2>Pakistan Boards</h2>
-<p>Major examination boards and education authorities.</p>
-</div>
-</div>
+      <div class="info-box">
+        <h3>📄 Past Papers</h3>
+        <p>Past papers will be added here as separate resources.</p>
+      </div>
 
-<div class="boardgrid">
-<div class="board"><b>Punjab</b>BISE Lahore, Faisalabad, Gujranwala, Multan, Rawalpindi, Sargodha, Bahawalpur, DG Khan, Sahiwal</div>
-<div class="board"><b>Federal</b>FBISE</div>
-<div class="board"><b>Sindh</b>Karachi, Hyderabad, Sukkur, Larkana, Mirpurkhas</div>
-<div class="board"><b>Khyber Pakhtunkhwa</b>Peshawar, Mardan, Swat, Abbottabad, Kohat, Bannu</div>
-<div class="board"><b>Balochistan</b>BBISE Quetta</div>
-<div class="board"><b>Azad Jammu & Kashmir</b>AJK BISE Mirpur</div>
-<div class="board"><b>Gilgit-Baltistan</b>Regional education resources</div>
-<div class="board"><b>Technical / Other</b>Technical and vocational boards</div>
-</div>
-</section>
+      <div class="info-box">
+        <h3>📖 Notes</h3>
+        <p>Subject notes will be listed here when available.</p>
+      </div>
 
-<section id="about">
-<div class="intro">
-<div>
-<h2>About ParhoPakistan</h2>
-<p>Independent student resource directory.</p>
-</div>
-</div>
-<p class="small">
-ParhoPakistan helps students find study resources.
-It is not affiliated with any examination board or government department.
-</p>
-</section>
+      <div class="info-box">
+        <h3>☑️ MCQs</h3>
+        <p>MCQs and practice material will have their own section.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOARDS -->
+  <section id="boards">
+    <div class="intro">
+      <div>
+        <h2>Pakistan Boards</h2>
+        <p>Major examination boards and education authorities.</p>
+      </div>
+    </div>
+
+    <div class="boardgrid">
+      <div class="board"><b>Punjab</b>BISE Lahore, Faisalabad, Gujranwala, Multan, Rawalpindi, Sargodha, Bahawalpur, DG Khan, Sahiwal</div>
+      <div class="board"><b>Federal</b>FBISE</div>
+      <div class="board"><b>Sindh</b>Karachi, Hyderabad, Sukkur, Larkana, Mirpurkhas</div>
+      <div class="board"><b>Khyber Pakhtunkhwa</b>Peshawar, Mardan, Swat, Abbottabad, Kohat, Bannu</div>
+      <div class="board"><b>Balochistan</b>BBISE Quetta</div>
+      <div class="board"><b>Azad Jammu & Kashmir</b>AJK BISE Mirpur</div>
+      <div class="board"><b>Gilgit-Baltistan</b>Regional education resources</div>
+      <div class="board"><b>Technical / Other</b>Technical and vocational boards</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="intro">
+      <div>
+        <h2>About ParhoPakistan</h2>
+        <p>Independent student resource directory.</p>
+      </div>
+    </div>
+
+    <p class="small">
+      ParhoPakistan helps Pakistani students find educational resources.
+      It is not affiliated with any examination board or government department.
+      Resources are added as they become available.
+    </p>
+  </section>
+
+  <!-- PRIVACY -->
+  <section id="privacy">
+    <div class="intro">
+      <div>
+        <h2>Privacy Policy</h2>
+        <p>Information about this website.</p>
+      </div>
+    </div>
+
+    <p class="small">
+      ParhoPakistan is a student resource directory. We do not ask visitors to
+      submit personal information to download the listed resources. If advertising
+      services are added in the future, their own privacy and cookie policies may
+      apply. Visitors should review the relevant provider policies.
+    </p>
+  </section>
 
 </main>
 
 <footer>
-© <span id="year"></span> ParhoPakistan · Made for students of Pakistan
+  <p>© <span id="year"></span> ParhoPakistan · Made for students of Pakistan</p>
+  <div class="footer-links">
+    <a href="#resources">Resources</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#about">About</a>
+    <a href="#privacy">Privacy Policy</a>
+  </div>
+  <p class="small" style="color:#dbe8f2">
+    Independent educational resource website.
+  </p>
 </footer>
 
 <script>
 "use strict";
 
 /*
-  PDF links:
-  These files are expected in the main branch root folder
-  of the GitHub repository.
+  IMPORTANT:
+  Only the four Model Papers PDFs below are currently listed as available.
+  Books, Pairing Schemes, Past Papers, Notes and MCQs are kept separate.
+  Add their real file links when those files are uploaded.
 */
 
 const resources = [
-{
-cls:"9",
-title:"Class 9 Model Papers",
-file:"ModelPapers_9th lahore.pdf",
-url:"https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_9th%20lahore.pdf"
-},
-{
-cls:"10",
-title:"Class 10 Model Papers",
-file:"ModelPapers_10th lahore.pdf",
-url:"https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_10th%20lahore.pdf"
-},
-{
-cls:"11",
-title:"Class 11 Model Papers",
-file:"ModelPapers_11th lahore.pdf",
-url:"https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_11th%20lahore.pdf"
-},
-{
-cls:"12",
-title:"Class 12 Model Papers",
-file:"ModelPapers_12th lahore.pdf",
-url:"https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_12th%20lahore.pdf"
-}
+  {
+    cls:"9",
+    type:"Model Papers",
+    title:"Class 9 Model Papers",
+    board:"Lahore",
+    file:"ModelPapers_9th lahore.pdf",
+    url:"https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_9th%20lahore.pdf"
+  },
+  {
+    cls:"10",
+    type:"Model Papers",
+    title:"Class 10 Model Papers",
+    board:"Lahore",
+    file:"ModelPapers_10th lahore.pdf",
+    url:"https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_10th%20lahore.pdf"
+  },
+  {
+    cls:"11",
+    type:"Model Papers",
+    title:"Class 11 Model Papers",
+    board:"Lahore",
+    file:"ModelPapers_11th lahore.pdf",
+    url:"https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_11th%20lahore.pdf"
+  },
+  {
+    cls:"12",
+    type:"Model Papers",
+    title:"Class 12 Model Papers",
+    board:"Lahore",
+    file:"ModelPapers_12th lahore.pdf",
+    url:"https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_12th%20lahore.pdf"
+  }
 ];
 
 const classFilter = document.getElementById("classFilter");
+const typeFilter = document.getElementById("typeFilter");
 const search = document.getElementById("search");
 const grid = document.getElementById("resourceGrid");
 const count = document.getElementById("resultCount");
 
 function render(){
 
-const query = search.value.trim().toLowerCase();
+  const query = search.value.trim().toLowerCase();
 
-const filtered = resources.filter(resource => {
+  const filtered = resources.filter(resource => {
 
-const classMatch =
-classFilter.value === "all" ||
-resource.cls === classFilter.value;
+    const classMatch =
+      classFilter.value === "all" ||
+      resource.cls === classFilter.value;
 
-const searchMatch =
-!query ||
-`${resource.cls} class ${resource.title} ${resource.file} lahore model papers`
-.toLowerCase()
-.includes(query);
+    const typeMatch =
+      typeFilter.value === "all" ||
+      resource.type === typeFilter.value;
 
-return classMatch && searchMatch;
-});
+    const searchMatch =
+      !query ||
+      `${resource.cls} class ${resource.title} ${resource.type} ${resource.file} ${resource.board}`
+        .toLowerCase()
+        .includes(query);
 
-grid.replaceChildren();
+    return classMatch && typeMatch && searchMatch;
+  });
 
-if(filtered.length === 0){
-const empty = document.createElement("div");
-empty.className = "empty";
-empty.textContent = "No matching model papers found. Please change your search or class filter.";
-grid.appendChild(empty);
+  grid.replaceChildren();
+
+  if(filtered.length === 0){
+    const empty = document.createElement("div");
+    empty.className = "empty";
+
+    if(typeFilter.value !== "all" && typeFilter.value !== "Model Papers"){
+      empty.textContent =
+        "No uploaded files in this category yet. This category is separate and will show its own files when uploaded.";
+    }else{
+      empty.textContent =
+        "No matching resources found. Try another class or search term.";
+    }
+
+    grid.appendChild(empty);
+  }
+
+  filtered.forEach(resource => {
+
+    const card = document.createElement("article");
+    card.className = "card";
+
+    const tag = document.createElement("span");
+    tag.className = "tag";
+    tag.textContent =
+      `CLASS ${resource.cls} · ${resource.board.toUpperCase()} · ${resource.type.toUpperCase()}`;
+
+    const heading = document.createElement("h3");
+    heading.textContent = resource.title;
+
+    const para = document.createElement("p");
+    para.textContent =
+      "Lahore Board model papers. Open the PDF using the download button below.";
+
+    const link = document.createElement("a");
+    link.className = "download-btn";
+    link.href = resource.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = `Download Class ${resource.cls} PDF ↓`;
+
+    card.append(tag,heading,para,link);
+    grid.appendChild(card);
+  });
+
+  count.textContent =
+    `Showing ${filtered.length} of ${resources.length} uploaded resources.`;
 }
 
-filtered.forEach(resource => {
-
-const card = document.createElement("article");
-card.className = "card";
-
-const tag = document.createElement("span");
-tag.className = "tag";
-tag.textContent = `CLASS ${resource.cls} · LAHORE`;
-
-const heading = document.createElement("h3");
-heading.textContent = resource.title;
-
-const para = document.createElement("p");
-para.textContent = "Lahore Board uploaded model papers PDF.";
-
-const link = document.createElement("a");
-link.href = resource.url;
-link.target = "_blank";
-link.rel = "noopener noreferrer";
-link.textContent = `Download Class ${resource.cls} PDF ↓`;
-
-card.append(tag, heading, para, link);
-grid.appendChild(card);
-
-});
-
-count.textContent =
-`Showing ${filtered.length} of ${resources.length} available PDF resources.`;
-}
-
-classFilter.addEventListener("change", render);
-
-document.getElementById("searchBtn")
-.addEventListener("click", render);
-
-search.addEventListener("input", render);
+classFilter.addEventListener("change",render);
+typeFilter.addEventListener("change",render);
+document.getElementById("searchBtn").addEventListener("click",render);
+search.addEventListener("input",render);
 
 document.getElementById("year").textContent =
-new Date().getFullYear();
+  new Date().getFullYear();
 
+/* Urdu / English toggle */
 let urdu = false;
 
-document.getElementById("langBtn").addEventListener("click", () => {
+document.getElementById("langBtn").addEventListener("click",() => {
 
-urdu = !urdu;
+  urdu = !urdu;
 
-document.documentElement.lang = urdu ? "ur" : "en";
-document.documentElement.dir = urdu ? "rtl" : "ltr";
+  document.documentElement.lang = urdu ? "ur" : "en";
+  document.documentElement.dir = urdu ? "rtl" : "ltr";
 
-document.querySelectorAll("[data-en]").forEach(element => {
-element.textContent = urdu
-? element.dataset.ur
-: element.dataset.en;
-});
+  document.querySelectorAll("[data-en]").forEach(element => {
+    element.textContent = urdu
+      ? element.dataset.ur
+      : element.dataset.en;
+  });
 
-search.placeholder = urdu
-? "جماعت یا ماڈل پیپرز تلاش کریں..."
-: "Search class or model papers...";
+  search.placeholder = urdu
+    ? "جماعت، مضمون یا تعلیمی مواد تلاش کریں..."
+    : "Search class, subject or material...";
 
-document.getElementById("langBtn").textContent =
-urdu ? "English" : "اردو";
-
+  document.getElementById("langBtn").textContent =
+    urdu ? "English" : "اردو";
 });
 
 render();
