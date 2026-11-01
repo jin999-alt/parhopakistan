@@ -1,3 +1,4 @@
+ 
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,67 +9,156 @@
 <title>ParhoPakistan | Study Resources for Every Student</title>
 <style>
 :root{--navy:#102a43;--blue:#1769aa;--sky:#eaf4fb;--ink:#182b3a;--muted:#607487;--line:#dce6ee;--white:#fff;--green:#13795b}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f8fb;color:var(--ink);line-height:1.55}
-header{background:linear-gradient(120deg,#102a43,#1769aa);color:white;padding:18px max(20px,calc((100% - 1160px)/2));}
-.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:25px;font-weight:800;letter-spacing:.2px}.brand span{color:#8ed6ff}
-nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:600;font-size:14px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f8fb;color:var(--ink);line-height:1.55}
+header{background:linear-gradient(120deg,#102a43,#1769aa);color:white;padding:18px max(20px,calc((100% - 1160px)/2))}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-size:25px;font-weight:800;letter-spacing:.2px}
+.brand span{color:#8ed6ff}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-weight:600;font-size:14px}
 .lang{border:1px solid #ffffff88;background:#ffffff18;color:white;border-radius:10px;padding:9px 13px;cursor:pointer;font-weight:700}
-.hero{max-width:1160px;margin:36px auto 22px;padding:0 20px 30px}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:0 0 12px;max-width:760px}.hero p{max-width:720px;color:#e2f1fc;font-size:17px;margin:0 0 22px}
-.searchrow{display:grid;grid-template-columns:1fr auto;gap:10px;max-width:760px}.searchrow input{width:100%;padding:15px 16px;border:0;border-radius:12px;font-size:16px}.searchrow button,.primary{background:#ffca55;color:#263746;border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px 55px}.intro{display:flex;justify-content:space-between;align-items:end;gap:14px;flex-wrap:wrap;margin:28px 0 16px}.intro h2{margin:0;font-size:25px}.intro p{margin:3px 0;color:var(--muted)}
+.hero{max-width:1160px;margin:36px auto 22px;padding:0 20px 30px}
+.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:0 0 12px;max-width:760px}
+.hero p{max-width:720px;color:#e2f1fc;font-size:17px;margin:0 0 22px}
+.searchrow{display:grid;grid-template-columns:1fr auto;gap:10px;max-width:760px}
+.searchrow input{width:100%;padding:15px 16px;border:0;border-radius:12px;font-size:16px}
+.searchrow button,.primary{background:#ffca55;color:#263746;border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px 55px}
+.intro{display:flex;justify-content:space-between;align-items:end;gap:14px;flex-wrap:wrap;margin:28px 0 16px}
+.intro h2{margin:0;font-size:25px}
+.intro p{margin:3px 0;color:var(--muted)}
 .filters{background:white;border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;box-shadow:0 5px 18px #18364b0a}
-label{display:block;font-size:12px;font-weight:800;color:var(--muted);margin:0 0 5px}select,input{font:inherit}select{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink)}
+label{display:block;font-size:12px;font-weight:800;color:var(--muted);margin:0 0 5px}
+select,input{font:inherit}
+select{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink)}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:18px}
 .card{background:white;border:1px solid var(--line);border-radius:15px;padding:17px;display:flex;flex-direction:column;gap:9px;min-height:190px;box-shadow:0 5px 18px #18364b08}
-.tag{font-size:11px;font-weight:800;color:var(--blue);background:var(--sky);padding:5px 9px;border-radius:30px;align-self:flex-start}.card h3{margin:0;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}.card a{margin-top:auto;color:var(--blue);font-weight:800;text-decoration:none}.card a:hover{text-decoration:underline}
-.notice{margin-top:22px;padding:17px;border-radius:14px;background:#fff8e8;border:1px solid #f1dfb7;color:#614b1c}.notice a{color:#125d91;font-weight:700}
-.boardgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.board{background:white;border:1px solid var(--line);padding:13px;border-radius:12px;font-size:14px}.board b{display:block}
-footer{background:#102a43;color:#dbe8f2;padding:28px 20px;text-align:center}footer a{color:#9edcff}
+.tag{font-size:11px;font-weight:800;color:var(--blue);background:var(--sky);padding:5px 9px;border-radius:30px;align-self:flex-start}
+.card h3{margin:0;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.card a{margin-top:auto;color:var(--blue);font-weight:800;text-decoration:none}
+.card a:hover{text-decoration:underline}
+.notice{margin-top:22px;padding:17px;border-radius:14px;background:#fff8e8;border:1px solid #f1dfb7;color:#614b1c}
+.notice a{color:#125d91;font-weight:700}
+.download-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:18px}
+.boardgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.board{background:white;border:1px solid var(--line);padding:13px;border-radius:12px;font-size:14px}
+.board b{display:block}
+footer{background:#102a43;color:#dbe8f2;padding:28px 20px;text-align:center}
+footer a{color:#9edcff}
 .empty{grid-column:1/-1;background:white;border:1px dashed #b9c9d6;padding:25px;border-radius:14px;text-align:center;color:var(--muted)}
 .small{font-size:13px;color:var(--muted)}
-@media(max-width:800px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.boardgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:520px){.searchrow{grid-template-columns:1fr}.filters,.grid{grid-template-columns:1fr}.hero{margin-top:25px}.brand{font-size:22px}}
+@media(max-width:800px){
+.filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.download-grid{grid-template-columns:1fr}
+.boardgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:520px){
+.searchrow{grid-template-columns:1fr}
+.filters,.grid,.download-grid{grid-template-columns:1fr}
+.hero{margin-top:25px}
+.brand{font-size:22px}
+}
 </style>
 </head>
 <body>
+
 <header>
  <div class="top">
   <div class="brand">Parho<span>Pakistan</span></div>
-  <nav><a href="#resources" data-en="Resources" data-ur="تعلیمی مواد">Resources</a><a href="#boards" data-en="Boards" data-ur="بورڈز">Boards</a><a href="#about" data-en="About" data-ur="تعارف">About</a></nav>
+  <nav>
+   <a href="#resources" data-en="Resources" data-ur="تعلیمی مواد">Resources</a>
+   <a href="#boards" data-en="Boards" data-ur="بورڈز">Boards</a>
+   <a href="#about" data-en="About" data-ur="تعارف">About</a>
+  </nav>
   <button class="lang" id="langBtn" type="button">اردو</button>
  </div>
  <section class="hero">
   <h1 data-en="Study smarter. Prepare with confidence." data-ur="سمجھداری سے پڑھیں، اعتماد سے تیاری کریں۔">Study smarter. Prepare with confidence.</h1>
   <p data-en="A growing study-resource directory for students of Pakistani boards — from Class 9 to Class 12, across major study groups." data-ur="پاکستانی بورڈز کے طلبہ کے لیے جماعت نہم سے بارہویں تک تعلیمی مواد کی ڈائریکٹری۔">A growing study-resource directory for students of Pakistani boards — from Class 9 to Class 12, across major study groups.</p>
-  <div class="searchrow"><input id="search" type="search" placeholder="Search class, subject or material..." aria-label="Search"><button id="searchBtn" type="button">Search</button></div>
+  <div class="searchrow">
+   <input id="search" type="search" placeholder="Search class, subject or material..." aria-label="Search">
+   <button id="searchBtn" type="button">Search</button>
+  </div>
  </section>
 </header>
+
 <main class="wrap">
  <section id="resources">
-  <div class="intro"><div><h2 data-en="Find your study material" data-ur="اپنا تعلیمی مواد تلاش کریں">Find your study material</h2><p data-en="Choose your class, board, group and subject." data-ur="اپنی جماعت، بورڈ، گروپ اور مضمون منتخب کریں۔">Choose your class, board, group and subject.</p></div></div>
-  <div class="filters">
-   <div><label for="classFilter">CLASS / جماعت</label><select id="classFilter"><option value="all">All classes / تمام جماعتیں</option><option>9</option><option>10</option><option>11</option><option>12</option></select></div>
-   <div><label for="groupFilter">STUDY GROUP / گروپ</label><select id="groupFilter"><option value="all">All groups</option><option>ICS</option><option>FSc Pre-Medical</option><option>FSc Pre-Engineering</option><option>FA</option><option>I.Com</option><option>General</option></select></div>
-   <div><label for="subjectFilter">SUBJECT / مضمون</label><select id="subjectFilter"><option value="all">All subjects</option></select></div>
-   <div><label for="typeFilter">MATERIAL TYPE / مواد</label><select id="typeFilter"><option value="all">All material</option><option>Past Papers</option><option>Pairing Schemes</option><option>Notes</option><option>MCQs</option><option>Guess Papers</option><option>Practice Tests</option><option>Textbooks</option></select></div>
+  <div class="intro">
+   <div>
+    <h2 data-en="Find your study material" data-ur="اپنا تعلیمی مواد تلاش کریں">Find your study material</h2>
+    <p data-en="Choose your class, board, group and subject." data-ur="اپنی جماعت، بورڈ، گروپ اور مضمون منتخب کریں۔">Choose your class, board, group and subject.</p>
+   </div>
   </div>
+
+  <div class="filters">
+   <div>
+    <label for="classFilter">CLASS / جماعت</label>
+    <select id="classFilter">
+     <option value="all">All classes / تمام جماعتیں</option>
+     <option>9</option><option>10</option><option>11</option><option>12</option>
+    </select>
+   </div>
+   <div>
+    <label for="groupFilter">STUDY GROUP / گروپ</label>
+    <select id="groupFilter">
+     <option value="all">All groups</option>
+     <option>ICS</option><option>FSc Pre-Medical</option>
+     <option>FSc Pre-Engineering</option><option>FA</option>
+     <option>I.Com</option><option>General</option>
+    </select>
+   </div>
+   <div>
+    <label for="subjectFilter">SUBJECT / مضمون</label>
+    <select id="subjectFilter"><option value="all">All subjects</option></select>
+   </div>
+   <div>
+    <label for="typeFilter">MATERIAL TYPE / مواد</label>
+    <select id="typeFilter">
+     <option value="all">All material</option>
+     <option>Past Papers</option><option>Pairing Schemes</option>
+     <option>Notes</option><option>MCQs</option>
+     <option>Guess Papers</option><option>Practice Tests</option>
+     <option>Textbooks</option>
+    </select>
+   </div>
+  </div>
+
   <div class="grid" id="resourceGrid" aria-live="polite"></div>
   <p class="small" id="resultCount"></p>
- <div class="notice">
-  <b>Important:</b> Always verify the syllabus and paper scheme for your own board and exam year.
-</div>
 
-<div class="card" style="margin-top:18px;">
-  <span class="tag">CLASS 11</span>
-  <h3>ALP Grade 11 Notification</h3>
-  <p>Class 11 official syllabus notification PDF.</p>
-  <a href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/Notification-ALP-Grade-11.pdf"
-     target="_blank" rel="noopener">
+  <div class="notice">
+   <b>Important:</b> Always verify the syllabus and paper scheme for your own board and exam year.
+  </div>
+
+  <div class="download-grid">
+   <article class="card">
+    <span class="tag">CLASS 11</span>
+    <h3>ALP Grade 11 Notification</h3>
+    <p>Class 11 official syllabus notification PDF.</p>
+    <a href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/Notification-ALP-Grade-11.pdf" target="_blank" rel="noopener">
      Download Class 11 PDF ↓
-  </a>
-</div>
+    </a>
+   </article>
+
+   <article class="card">
+    <span class="tag">CLASS 9</span>
+    <h3>Class 9 Revised ALP Notification</h3>
+    <p>Official syllabus and paper scheme ZIP file. Extract the ZIP after downloading.</p>
+    <a href="https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/Revised-ALP-Notification-07.11.2025-1.zip" target="_blank" rel="noopener">
+     Download Class 9 ZIP ↓
+    </a>
+   </article>
+  </div>
+ </section>
+
  <section id="boards">
-  <div class="intro"><div><h2>Pakistan Boards</h2><p>Major examination boards and education authorities.</p></div></div>
+  <div class="intro">
+   <div><h2>Pakistan Boards</h2><p>Major examination boards and education authorities.</p></div>
+  </div>
   <div class="boardgrid">
    <div class="board"><b>Punjab</b>BISE Lahore, Faisalabad, Gujranwala, Multan, Rawalpindi, Sargodha, Bahawalpur, DG Khan, Sahiwal</div>
    <div class="board"><b>Federal</b>FBISE</div>
@@ -80,19 +170,31 @@ footer{background:#102a43;color:#dbe8f2;padding:28px 20px;text-align:center}foot
    <div class="board"><b>Technical / other</b>Relevant technical and vocational boards</div>
   </div>
  </section>
+
  <section id="about">
-  <div class="intro"><div><h2>About ParhoPakistan</h2><p>Independent student resource directory. Not affiliated with any examination board or government department.</p></div></div>
+  <div class="intro">
+   <div><h2>About ParhoPakistan</h2><p>Independent student resource directory. Not affiliated with any examination board or government department.</p></div>
+  </div>
   <p class="small">We aim to help students find reliable study resources. Before sharing any PDF, we check its board, class, subject and exam session. Copyrighted books and paid notes are not hosted without permission.</p>
  </section>
 </main>
+
 <footer>© <span id="year"></span> ParhoPakistan · Made for students of Pakistan</footer>
+
 <script>
 "use strict";
+
 const subjects = [
-"English","Urdu","Islamiyat","Tarjuma-tul-Quran","Pakistan Studies","Mathematics","Physics","Chemistry","Biology","Computer Science","Statistics","Economics","Principles of Accounting","Principles of Commerce","Business Mathematics","Education","Civics","Psychology","Sociology","Geography","History","Islamic History","Arabic","Persian","Punjabi","Fine Arts","Home Economics","Physical Education","Library Science"
+"English","Urdu","Islamiyat","Tarjuma-tul-Quran","Pakistan Studies",
+"Mathematics","Physics","Chemistry","Biology","Computer Science",
+"Statistics","Economics","Principles of Accounting","Principles of Commerce",
+"Business Mathematics","Education","Civics","Psychology","Sociology",
+"Geography","History","Islamic History","Arabic","Persian","Punjabi",
+"Fine Arts","Home Economics","Physical Education","Library Science"
 ];
+
 const types = ["Past Papers","Pairing Schemes","Notes","MCQs","Guess Papers","Practice Tests","Textbooks"];
-const groups = ["ICS","FSc Pre-Medical","FSc Pre-Engineering","FA","I.Com","General"];
+
 const classFilter=document.getElementById("classFilter");
 const groupFilter=document.getElementById("groupFilter");
 const subjectFilter=document.getElementById("subjectFilter");
@@ -100,53 +202,97 @@ const typeFilter=document.getElementById("typeFilter");
 const search=document.getElementById("search");
 const grid=document.getElementById("resourceGrid");
 const count=document.getElementById("resultCount");
+
 const allResources=[];
+
 for(let cls=9;cls<=12;cls++){
-  for(const subject of subjects){
-    for(const type of types){
-      allResources.push({cls:String(cls),subject,type,group:"All groups"});
-    }
+ for(const subject of subjects){
+  for(const type of types){
+   allResources.push({cls:String(cls),subject,type,group:"All groups"});
   }
+ }
 }
-for(const s of subjects){const o=document.createElement("option");o.value=s;o.textContent=s;subjectFilter.appendChild(o);}
+
+for(const s of subjects){
+ const o=document.createElement("option");
+ o.value=s;
+ o.textContent=s;
+ subjectFilter.appendChild(o);
+}
+
 function render(){
  const q=search.value.trim().toLowerCase();
+
  const filtered=allResources.filter(r=>
   (classFilter.value==="all"||r.cls===classFilter.value)&&
   (subjectFilter.value==="all"||r.subject===subjectFilter.value)&&
   (typeFilter.value==="all"||r.type===typeFilter.value)&&
-  (groupFilter.value==="all"||groupFilter.value==="General"||
-    (groupFilter.value==="ICS"&&["Computer Science","Mathematics","Physics","Statistics","Economics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
-    (groupFilter.value==="FSc Pre-Medical"&&["Biology","Chemistry","Physics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
-    (groupFilter.value==="FSc Pre-Engineering"&&["Mathematics","Chemistry","Physics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
-    (groupFilter.value==="I.Com"&&["Principles of Accounting","Principles of Commerce","Business Mathematics","Economics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
-    (groupFilter.value==="FA"&&!["Computer Science","Biology","Chemistry","Physics","Principles of Accounting","Principles of Commerce"].includes(r.subject))
-  )&&(!q||`${r.cls} ${r.subject} ${r.type} ${r.group}`.toLowerCase().includes(q))
+  (
+   groupFilter.value==="all"||
+   groupFilter.value==="General"||
+   (groupFilter.value==="ICS"&&["Computer Science","Mathematics","Physics","Statistics","Economics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
+   (groupFilter.value==="FSc Pre-Medical"&&["Biology","Chemistry","Physics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
+   (groupFilter.value==="FSc Pre-Engineering"&&["Mathematics","Chemistry","Physics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
+   (groupFilter.value==="I.Com"&&["Principles of Accounting","Principles of Commerce","Business Mathematics","Economics","English","Urdu","Islamiyat","Tarjuma-tul-Quran"].includes(r.subject))||
+   (groupFilter.value==="FA"&&!["Computer Science","Biology","Chemistry","Physics","Principles of Accounting","Principles of Commerce"].includes(r.subject))
+  )&&
+  (!q||`${r.cls} ${r.subject} ${r.type} ${r.group}`.toLowerCase().includes(q))
  );
+
  const shown=filtered.slice(0,72);
  grid.replaceChildren();
- if(!shown.length){grid.innerHTML='<div class="empty">No matching subjects found. Try changing your filters.</div>';}
- for(const r of shown){
-  const card=document.createElement("article");card.className="card";
-  const tag=document.createElement("span");tag.className="tag";tag.textContent=`CLASS ${r.cls}`;
-  const h=document.createElement("h3");h.textContent=`${r.subject} — ${r.type}`;
-  const p=document.createElement("p");p.textContent="Resource listing planned. Verified file will be added when available.";
-  const a=document.createElement("a");a.href="https://pectaa.edu.pk/books-and-publications/";a.target="_blank";a.rel="noopener";a.textContent="Check official Punjab resources ↗";
-  card.append(tag,h,p,a);grid.append(card);
+
+ if(!shown.length){
+  grid.innerHTML='<div class="empty">No matching subjects found. Try changing your filters.</div>';
  }
+
+ for(const r of shown){
+  const card=document.createElement("article");
+  card.className="card";
+
+  const tag=document.createElement("span");
+  tag.className="tag";
+  tag.textContent=`CLASS ${r.cls}`;
+
+  const h=document.createElement("h3");
+  h.textContent=`${r.subject} — ${r.type}`;
+
+  const p=document.createElement("p");
+  p.textContent="Resource listing planned. Verified file will be added when available.";
+
+  const a=document.createElement("a");
+  a.href="https://pectaa.edu.pk/books-and-publications/";
+  a.target="_blank";
+  a.rel="noopener";
+  a.textContent="Check official Punjab resources ↗";
+
+  card.append(tag,h,p,a);
+  grid.append(card);
+ }
+
  count.textContent=`Showing ${shown.length} of ${filtered.length} matching listings.`;
 }
+
 [classFilter,groupFilter,subjectFilter,typeFilter].forEach(el=>el.addEventListener("change",render));
 document.getElementById("searchBtn").addEventListener("click",render);
 search.addEventListener("input",render);
 document.getElementById("year").textContent=new Date().getFullYear();
+
 let urdu=false;
+
 document.getElementById("langBtn").addEventListener("click",()=>{
- urdu=!urdu;document.documentElement.lang=urdu?"ur":"en";document.documentElement.dir=urdu?"rtl":"ltr";
- document.querySelectorAll("[data-en]").forEach(el=>el.textContent=urdu?el.dataset.ur:el.dataset.en);
+ urdu=!urdu;
+ document.documentElement.lang=urdu?"ur":"en";
+ document.documentElement.dir=urdu?"rtl":"ltr";
+
+ document.querySelectorAll("[data-en]").forEach(el=>{
+  el.textContent=urdu?el.dataset.ur:el.dataset.en;
+ });
+
  document.getElementById("langBtn").textContent=urdu?"English":"اردو";
  search.placeholder=urdu?"جماعت، مضمون یا مواد تلاش کریں":"Search class, subject or material...";
 });
+
 render();
 </script>
 </body>
