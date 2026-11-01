@@ -86,6 +86,7 @@ const papers=[];
 for(const board of boards) for(const group of groups) for(const cls of ['11','12']) papers.push({board,cls,group,kind:'Study Guide',subject:group,title:'Class '+cls+' '+group+' Study Guide',url:'intermediate-study-guide.html#'+groups.find(g=>g[1]===group)[0]});
 papers.push({board:'Lahore',cls:'11',group:'All groups',kind:'Model Paper',subject:'All subjects',title:'Class 11 Lahore Board Model Papers',url:'https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_11th%20lahore.pdf'});
 papers.push({board:'Lahore',cls:'12',group:'All groups',kind:'Model Paper',subject:'All subjects',title:'Class 12 Lahore Board Model Papers',url:'https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ModelPapers_12th%20lahore.pdf'});
+papers.push({board:'Lahore',cls:'11',group:'ICS',kind:'Notes',subject:'ICS',title:'1st Year ICS Original Revision Notes & Study Planner',url:'https://github.com/jin999-alt/parhopakistan/raw/refs/heads/main/ICS_1st_Year_Study_Planner_Original.pdf'});
 const $=id=>document.getElementById(id),results=$('results');
 function render(){const q=$('search').value.trim().toLowerCase(),b=$('board').value,c=$('class').value,g=$('group').value,k=$('kind').value;
 const found=papers.filter(p=>(b==='all'||p.board===b)&&(c==='all'||p.cls===c)&&(g==='all'||p.group===g)&&(k==='all'||p.kind===k)&&(!q||[p.board,p.cls,p.group,p.kind,p.subject,p.title].join(' ').toLowerCase().includes(q)));
