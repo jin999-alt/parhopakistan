@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jin999-alt.github.io/parhopakistan/sitemap.xml
